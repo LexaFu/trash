@@ -1,0 +1,40 @@
+@import "module/couleur";
+
+.head
+{
+  width: 100%;
+  background-color: $olive;
+  height: 10vh;
+}
+
+.logo
+{
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+
+.foot
+{
+  width: 100%;
+  background-color: $olive;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.map
+{
+  height: 50vh;
+  width: 100%;
+}
+
+.ok
+{
+  width: 100vw;
+  height: 30vh;
+  font-size: 3em;
+}
