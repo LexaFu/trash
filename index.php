@@ -66,7 +66,7 @@ include 'header.php';
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw5uQmcggSjIH3qc1jct_vaNZp-2cP15w&callback=initMap"
             async defer></script>
 
-    <button id="ok" class="ok">Add marker</button>
+    
 
 <?php
 include 'footer.php';

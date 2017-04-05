@@ -10,6 +10,7 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="res/stylesheets/style.css">
     <link rel="stylesheet" href="res/stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" href="styleMe.css">
 	<title>trash</title>
 </head>
 <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
@@ -27,5 +28,10 @@
 <body>
 
 <header class="head">
-        <div class="logo"></div>
-    </header>
+        <div class="logo">
+        </div>
+        <a href="login.php" id="login" class="login">Connexion</a>
+</header>
+        
+        
+       
