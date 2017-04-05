@@ -1,0 +1,38 @@
+/* line 3, ../sass/style.scss */
+.head {
+  width: 100%;
+  background-color: #61812c;
+  height: 10vh;
+}
+
+/* line 10, ../sass/style.scss */
+.logo {
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+
+/* line 20, ../sass/style.scss */
+.foot {
+  width: 100%;
+  background-color: #61812c;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 29, ../sass/style.scss */
+.map {
+  height: 50vh;
+  width: 100%;
+}
+
+/* line 35, ../sass/style.scss */
+.ok {
+  width: 100vw;
+  height: 30vh;
+  font-size: 3em;
+}
