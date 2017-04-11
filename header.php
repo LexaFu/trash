@@ -10,6 +10,7 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="res/stylesheets/style.css">
     <link rel="stylesheet" href="res/stylesheets/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styleMe.css">
 	<title>trash</title>
 </head>
