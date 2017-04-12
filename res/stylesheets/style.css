@@ -1,7 +1,6 @@
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
 h2 {
   font-family: 'roboto', sans-serif !important;
-  font-style: italic;
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
@@ -9,32 +8,72 @@ h2 {
   text-align: center;
   font-size: 50px;
   margin-top: 100px;
+  margin-bottom: 80px;
 }
 
-/* line 7, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
 .username input, .password input {
   width: 100vw;
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  border: 2px solid;
+  border: 1px solid;
   border-color: grey;
 }
 
 /* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
-input[type='validate'] {
+.validate input {
+  width: 100vw;
   text-align: center;
+  border: 1px solid;
+  border-color: grey;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
-/* line 6, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 27, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+#subscribe {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+#subscribe a {
+  text-decoration: none;
+}
+
+/* line 36, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+#login_recover {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* line 42, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+#login_recover a {
+  text-decoration: none;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.foot {
+  width: 100vw;
+  background-color: #61812c;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .head {
   width: 100%;
   background-color: #61812c;
   height: 10vh;
 }
 
-/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .logo {
   background-image: url("../images/logo.png");
   background-position: center;
@@ -44,22 +83,13 @@ input[type='validate'] {
   height: 100%;
 }
 
-/* line 23, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
-.foot {
-  width: 100%;
-  background-color: #61812c;
-  height: 10vh;
-  position: absolute;
-  bottom: 0;
-}
-
-/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 7, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .map {
   height: 50vh;
   width: 100%;
 }
 
-/* line 38, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .ok {
   width: 100vw;
   height: 30vh;

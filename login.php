@@ -13,9 +13,14 @@
 	        <input type="password" name="password" id="password" placeholder="Mot de passe">
         </div>
         <div class="validate">
-	        <input type="validate">
+	        <input type="validate" value="Valider">
         </div>
-
+        <div id="subscribe">
+            <a href="">s'incrire</a>
+        </div>
+        <div id="login_recover">
+		  <a href="">mot de passe oublié ?</a>
+        </div>
     </form>
 </div>
 
