@@ -83,13 +83,35 @@ h2 {
   height: 100%;
 }
 
-/* line 7, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.subscribe_title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.name input,
+.surname input,
+.mail input,
+.telephone input {
+  width: 100vw;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid;
+  border-color: grey;
+}
+
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .map {
   height: 50vh;
   width: 100%;
 }
 
-/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 14, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .ok {
   width: 100vw;
   height: 30vh;

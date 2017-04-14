@@ -16,7 +16,7 @@
 	        <input type="validate" value="Valider">
         </div>
         <div id="subscribe">
-            <a href="">s'incrire</a>
+            <a href="subscribe.php">s'incrire</a>
         </div>
         <div id="login_recover">
 		  <a href="">mot de passe oublié ?</a>
