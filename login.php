@@ -5,7 +5,7 @@
 </div>
 
 <div class="login_form">
-    <form action="login_post.php" methode="post">
+    <form action="login_post.php" method="post">
 	    <div class="username">
 	        <input type="text" name="username" id="nickname" placeholder="Identifiant">
         </div>
@@ -13,7 +13,7 @@
 	        <input type="password" name="password" id="password" placeholder="Mot de passe">
         </div>
         <div class="validate">
-	        <input type="validate" value="Valider">
+	        <input type="submit" value="Valider">
         </div>
         <div id="subscribe">
             <a href="subscribe.php">s'incrire</a>

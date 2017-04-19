@@ -7,10 +7,10 @@
 <div class="subscribe_form">
 	<form action="subscribe_post.php" method="post">
 		<div class="name">
-			<input type="text" id="name" name="name" placeholder="Nom" required="required">
+			<input type="text" id="name" name="last_name" placeholder="Nom" required="required">
 		</div>
 		<div class="surname">
-			<input type="text" id="surname" name="surname" placeholder="Prénom" required="required">
+			<input type="text" id="surname" name="first_name" placeholder="Prénom" required="required">
 		</div>
 		<div class="username">
 	        <input type="text" name="username" id="nickname" placeholder="Identifiant" required="required">

@@ -27,12 +27,21 @@
     firebase.initializeApp(config);
 </script>
 <body>
+<?php
+session_start();
+?>
+    <header class="head">
+            <div class="logo">
+            </div>
+            <?php
+            if (!isset($_SESSION['id_user'])) {?>
+                <a href="login.php" id="login" class="login">Connexion</a>
+            <?php }else{?>
+                <a href="logout.php" id="login" class="login">déconnexion</a>
+            <?php }?>
 
-<header class="head">
-        <div class="logo">
-        </div>
-        <a href="login.php" id="login" class="login">Connexion</a>
-</header>
+
+    </header>
         
         
        
