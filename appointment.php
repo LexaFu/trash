@@ -20,7 +20,7 @@
 
     		<div class="address">
         		<label for="address">Adresse</label>
-        		<input type="text" name="street_number+street" />
+        		<input type="text" name="address" />
     		</div>
     		<div class="cp">
         		<label for="cp">Code postal</label>
