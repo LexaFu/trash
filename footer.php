@@ -3,7 +3,9 @@
 			<button id="ok" class="ok">Marker</button>
         </div>
         <div>
-        	<!-- calendrier --><a href="date.php">Calendrier</a>
+        	<!-- <a href="date.php">Calendrier</a> -->
+        	<!-- formulaire de contact -->
+        	<a href="appointment.php">Rendez vous</a>
 			
 			<?php require ('date.php');
 			?>

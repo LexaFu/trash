@@ -1,4 +1,4 @@
-<?php  
+<!-- <?php  
 
 $year = date('Y');
 $date = new Date();
@@ -46,10 +46,11 @@ $dates = $date->getAll($year);
 			<thead>
 				<tr>
 				<!-- 23.46 -->
-					<?php foreach ($date->$days as $d) ?>
+					<!-- <?php foreach ($date->$days as $d) ?>
 				</tr>
 			</thead>
 		</table>
 	</div>
 </div>
 <pre><?php print_r($dates); ?></pre>
+ --> -->
