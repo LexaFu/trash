@@ -1,10 +1,13 @@
+<?php
+session_start();
+?>
 <!-- **
  * Created by PhpStorm.
  * User: axel
  * Date: 28/03/2017
  * Time: 11:27
  * -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
@@ -27,9 +30,7 @@
     firebase.initializeApp(config);
 </script>
 <body>
-<?php
-session_start();
-?>
+
     <header class="head">
             <div class="logo">
             </div>
