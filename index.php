@@ -50,22 +50,22 @@ include 'header.php';
                     handleLocationError(false, infoWindow, map.getCenter());
                 }
 
-
-
-
                 var marker = new google.maps.Marker({
                     position: pos,
                     map: map,
                     title: 'Hello World!'
                 });
-
-
-
             }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw5uQmcggSjIH3qc1jct_vaNZp-2cP15w&callback=initMap"
-                async defer></script>
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw5uQmcggSjIH3qc1jct_vaNZp-2cP15w&callback=initMap"
+            async defer></script>
 
     </div>
+
 <?php
 include 'footer.php';
+
+
+
+
+
