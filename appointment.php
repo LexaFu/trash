@@ -55,9 +55,14 @@
             <!-- <input type="file" name="img" id="img" required="true"/> -->
 
             <!-- <input type=submit value="submit" name="upload"/> -->
+            <div class="date_appointment" > 
+	          <p>Date: <input type="text" id="datepicker" name="date_appointment"></p>
+	        </div>
 
 			
 	 		<div class="bouton">
         		<button type="submit">Envoyer</button>
     		</div>
 		</form>
+
+<?php include "footer.php"; ?>
