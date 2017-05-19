@@ -20,7 +20,7 @@
 
     		<div class="address">
         		<label for="address">Adresse</label>
-        		<input type="text" name="street_number+street" />
+        		<input type="text" name="address" />
     		</div>
     		<div class="cp">
         		<label for="cp">Code postal</label>
@@ -54,13 +54,9 @@
                 
             <!-- <input type="file" name="img" id="img" required="true"/> -->
 
-            <input type=submit value="submit" name="upload"/>
+            <!-- <input type=submit value="submit" name="upload"/> -->
 
-			<div>
-			<label for="date_appointment">Date du rendez vous</label>
-				<input type="date" name="date_appointment">
-			</div>
-
+			
 	 		<div class="bouton">
         		<button type="submit">Envoyer</button>
     		</div>
