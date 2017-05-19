@@ -8,10 +8,6 @@
 
         	<a href="appointment.php">Rendez vous</a>
 
-			  <form class="date_appointment" action="app_post.php" method="post"> 
-          <p>Date: <input type="text" id="datepicker" name="date_appointment"></p>
-        </form>
-        			
 		    </div>
     </footer>
  </body>

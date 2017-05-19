@@ -64,5 +64,10 @@
         		<button type="submit">Envoyer</button>
     		</div>
 		</form>
+		
+<?php 
+	include "footer.php"; 
+?>
 
-<?php include "footer.php"; ?>
+
+
