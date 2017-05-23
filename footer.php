@@ -8,6 +8,8 @@
 
         	<a href="appointment.php">Rendez vous</a>
 
+          <a href="reporting.php">Urgent</a>
+
 		    </div>
     </footer>
  </body>
