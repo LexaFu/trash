@@ -5,7 +5,7 @@
 		"../sass/ie.scss"
 	],
 	"sourcesContent": [
-		"/* Welcome to Compass. Use this file to write IE specific override styles.\r\n * Import this file using the following HTML or equivalent:\r\n * <!--[if IE]>\r\n *   <link href=\"/stylesheets/ie.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\r\n * <![endif]--> */\r\n"
+		"/* Welcome to Compass. Use this file to write IE specific override styles.\n * Import this file using the following HTML or equivalent:\n * <!--[if IE]>\n *   <link href=\"/stylesheets/ie.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\n * <![endif]--> */\n"
 	],
 	"mappings": "AAAA;;;;kBAIkB",
 	"names": []

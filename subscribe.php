@@ -15,17 +15,17 @@
 		<div class="username">
 	        <input type="text" name="username" id="nickname" placeholder="Identifiant" required="required">
         </div>
-        <div class="mail">
-        	<input type="mail" name="mail" placeholder="Adresse email" required="required">
+        <div class="email">
+        	<input type="mail" name="email" placeholder="Adresse email" required="required">
         </div>
-        <div class="telephone">
-        	<input type="number" name="telephone" placeholder="Numéro De Téléphone" required="required">
+        <div class="phone">
+        	<input type="number" name="phone" placeholder="Numéro De Téléphone" required="required">
         </div>
 		<div class="password">
 			<input type="password" name="password" placeholder="Mot De Passe" required="required">
 		</div>
 		<div class="validate">
-	        <input type="validate" value="Valider">
+	        <button>Valider</button>
         </div>
 	</form>
 </div>

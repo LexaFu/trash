@@ -5,7 +5,7 @@
 		"../sass/print.scss"
 	],
 	"sourcesContent": [
-		"/* Welcome to Compass. Use this file to define print styles.\r\n * Import this file using the following HTML or equivalent:\r\n * <link href=\"/stylesheets/print.css\" media=\"print\" rel=\"stylesheet\" type=\"text/css\" /> */\r\n"
+		"/* Welcome to Compass. Use this file to define print styles.\n * Import this file using the following HTML or equivalent:\n * <link href=\"/stylesheets/print.css\" media=\"print\" rel=\"stylesheet\" type=\"text/css\" /> */\n"
 	],
 	"mappings": "AAAA;;2FAE2F",
 	"names": []
