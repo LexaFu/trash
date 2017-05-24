@@ -24,8 +24,8 @@
 		<div class="password">
 			<input type="password" name="password" placeholder="Mot De Passe" required="required">
 		</div>
-		<div class="validate">
-	        <button>Valider</button>
+		<div >
+	        <button class="validate">Valider</button>
         </div>
 	</form>
 </div>

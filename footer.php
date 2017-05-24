@@ -1,4 +1,4 @@
-    <footer class="foot">
+    <footer>
       <div>
       	<!-- formulaire de contact -->
       	<a href="appointment.php">Rendez vous</a>

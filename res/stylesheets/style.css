@@ -63,12 +63,10 @@ h2 {
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
-.foot {
+footer {
   width: 100vw;
   background-color: #61812c;
-  height: 10vh;
-  position: absolute;
-  bottom: 0;
+  height: 80px;
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
@@ -94,6 +92,11 @@ h2 {
   float: right;
 }
 
+/* line 23, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.subscribe {
+  float: right;
+}
+
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 .subscribe_title {
   text-align: center;
@@ -106,10 +109,11 @@ h2 {
 .name input,
 .surname input,
 .email input,
-.phone input {
+.phone input,
+.validate {
   width: 100vw;
   margin-top: 20px;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   font-size: 30px;
   border: 1px solid;

@@ -14,11 +14,11 @@ session_start();
     </head>
     <body>
         <header class="head">
-            <div class="logo">
-            </div>
+            <a href="index.php" class="logo"></a>
             <?php
             if (!isset($_SESSION['id_user'])) {?>
-                <a href="login.php" id="login" class="login">Connexion</a>
+                <a href="login.php" id="login" class="login">Connexion</a> 
+                <a href="subscribe.php" id="subscribe" class="subscribe">pas encore inscrit ?</a>
             <?php }else{?>
                 <a href="logout.php" id="login" class="login">déconnexion</a>
             <?php }?>
