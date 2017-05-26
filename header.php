@@ -18,7 +18,7 @@ session_start();
             <?php
             if (!isset($_SESSION['id_user'])) {?>
                 <a href="login.php" id="login" class="login">Connexion</a> 
-                <a href="subscribe.php" id="subscribe" class="subscribe">pas encore inscrit ?</a>
+                <a href="subscribe.php" id="subscribe" class="login">Pas encore inscrit ?</a>
             <?php }else{?>
                 <a href="logout.php" id="login" class="login">déconnexion</a>
             <?php }?>

@@ -2,19 +2,29 @@
 include 'connect.php';
 ob_start();
 
-$req = $bdd->prepare('INSERT INTO users( username, password, first_name, last_name, email, address, phone) VALUES (:username, :password, :first_name, :last_name, :email, :address, :phone)');
+$pass_hache = sha1($_POST['password']);
+$username = strip_tags ($_POST['username']);
+$first_name = strip_tags ($_POST['first_name']);
+$last_name = strip_tags ($_POST['last_name']);
+$email = strip_tags ($_POST['email']);
+$address = strip_tags ($_POST['address']);
+$phone = strip_tags ($_POST['phone']);
 
-$req->execute(array(
 
-	'username'	 	   	=>strip_tags ($_POST['username']),
-	'password'	   	   	=>strip_tags ($_POST['password']),
-	'first_name'	    =>strip_tags ($_POST['first_name']),
-	'last_name'	        =>strip_tags ($_POST['last_name']),
-	'email'	        	=>strip_tags ($_POST['email']),
-	'address'    		=>strip_tags ($_POST['address']),
-	'phone'     		=>strip_tags ($_POST['phone'])
-	
+
+$newUser = $bdd->prepare('INSERT INTO users( username, password, first_name, last_name, email, address, phone) VALUES (:username, :password, :first_name, :last_name, :email, :address, :phone)');
+
+
+$newUser->execute(array(
+	'username'   => $username,
+	'password'	 => $pass_hache,
+	'first_name' => $first_name,
+	'last_name'  => $last_name,
+	'email'		 => $email,
+	'address'	 => $address,
+	'phone'		 => $phone
 ));
+
 
 $msg = 'Vous êtes maintenant inscrit';
 
