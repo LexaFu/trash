@@ -15,21 +15,21 @@
     		</div>
 
 			<div class="type">
-			<label for="type">Type d'encombrant</label>
-			<select name="type">
-				<option>Mobilier</option>
-				<option>Mécanique</option>
-				<option>Environnemental</option>
-			</select>
+				<label for="type">Type d'encombrant</label>
+				<select name="type">
+					<option>Mobilier</option>
+					<option>Mécanique</option>
+					<option>Environnemental</option>
+				</select>
 			</div>
 
 			<div class="size">
-			<label for="size">Taille de l'encombrant</label>
-			<select name="size">
-				<option>Petit</option>
-				<option>Moyen</option>
-				<option>Grand</option>
-			</select>
+				<label for="size">Taille de l'encombrant</label>
+				<select name="size">
+					<option>Petit</option>
+					<option>Moyen</option>
+					<option>Grand</option>
+				</select>
 			</div>
 
 			<!-- <label class="champs" for=""></label> -->

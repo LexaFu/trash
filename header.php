@@ -23,6 +23,9 @@ session_start();
                 <a href="logout.php" id="login" class="login">déconnexion</a>
             <?php }?>
         </header>
+
+<?php include "connect.php"; ?>
+
         
         
        
