@@ -4,6 +4,7 @@
 
     <div class="map" id="map">
     </div>
+    
     <div id="ok" class="ok">            
     </div>
 

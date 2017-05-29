@@ -33,8 +33,8 @@
 			</div>
 
 			<!-- <label class="champs" for=""></label> -->
-          	<input class="obstruction" type=radio name=>Gênant
-          	<input class="dangerous" type=radio name=>Dangereux<br>
+          	<input class="obstruction" type="radio" name=>Gênant
+          	<input class="dangerous" type="radio" name=>Dangereux<br>
 
 			<div class="description">
         		<label for="description">Description</label>
