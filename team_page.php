@@ -35,6 +35,7 @@ while ($donnees = $req->fetch()){
 ?>
 	<div class="map" id="map">
     </div>
+    
 
 <?php include "footer.php"; ?>
 

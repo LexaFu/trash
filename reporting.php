@@ -31,14 +31,13 @@
 					<option>Grand</option>
 				</select>
 			</div>
-
-			<!-- <label class="champs" for=""></label> -->
-          	<input class="obstruction" type="radio" name=>Gênant
-          	<input class="dangerous" type="radio" name=>Dangereux<br>
-
+			<form>
+	          	<input name="obstruction" type="radio">Gênant
+	          	<input name="obstruction" type="radio">Dangereux<br>
+			</form>
 			<div class="description">
-        		<label for="description">Description</label>
-        		<textarea name="description" size="250" rows="10" cols="50"></textarea>
+        		<!-- <label for="description">Description</label> -->
+        		<textarea name="description" size="250" rows="10" cols="50" placeholder="Description"></textarea>
     		</div>
 
     		<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
