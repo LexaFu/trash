@@ -65,16 +65,16 @@ h1 {
   color: #cc1761;
 }
 
-/* line 7, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 header {
   width: 100%;
   background-color: #61812c;
   height: 10vh;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .logo {
   background-image: url("../images/logo.png");
   background-position: center;
@@ -84,12 +84,12 @@ header {
   height: 100%;
 }
 
-/* line 28, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 27, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .login_area {
   width: 20%;
 }
 
-/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 30, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .main-title {
   width: 20%;
 }
@@ -127,13 +127,43 @@ header {
   border-color: grey;
 }
 
-/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.reporting_form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  border-color: #37431e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+textarea,
+.address input,
+.cp input {
+  font-size: 15px;
+}
+
+/* line 22, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.map-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 3px;
+  border-color: #37431e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .map {
   height: 80vh;
   width: 100%;
 }
 
-/* line 14, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .button {
   position: absolute;
 }

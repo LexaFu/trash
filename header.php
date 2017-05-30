@@ -17,9 +17,11 @@ session_start();
             <div class="logo">
                 <a href="index.php"></a>
             </div>
+
             <div class="main-title">
                 <h1>Eco City</h1>
             </div>
+        
             <?php
             if (!isset($_SESSION['id_user'])) {?>
                 <div class="login_area">

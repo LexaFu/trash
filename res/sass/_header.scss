@@ -4,13 +4,14 @@ h1{
   font-size: 30px!important;
   color: $rubis;
 }
+
 header
 {
   width: 100%;
   background-color: $olive;
   height: 10vh;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .logo
@@ -21,15 +22,11 @@ header
   background-repeat: no-repeat;
   width: 20%;
   height: 100%;
-  // float: left;
-  // display: block;
 }
 
 .login_area{
   width: 20%;
-  // float: right;
 }
 .main-title{
-  // display: block;
   width: 20%;
 }
