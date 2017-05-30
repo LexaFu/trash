@@ -19,7 +19,7 @@
         	<input type="mail" name="email" placeholder="Adresse email" required="required" maxlength="40">
         </div>
         <div class="phone">
-        	<input type="number" name="phone" placeholder="Numéro De Téléphone" pattern="06[0-9]{10}" required="required">
+        	<input type="number" name="phone" placeholder="Numéro De Téléphone" pattern="[0-9]{10}" required="required">
         </div>
 		<div class="password">
 			<input type="password" name="password" placeholder="Mot De Passe" required="required" maxlength="20">

@@ -1,6 +1,14 @@
 <?php 
- include "header.php";
-?>
+include "header.php";
+
+ob_start();
+
+if (!isset($_SESSION['id_user'])) {
+
+        header('Location: index.php'); 
+
+        }else{?>
+                
 
 <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
    	 		<div class="last_name">
@@ -64,6 +72,8 @@
         		<button type="submit">Envoyer</button>
     		</div>
 		</form>
+
+	<?php } ?>
 		
 <?php include "footer.php"; ?>
 
