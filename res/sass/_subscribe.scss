@@ -1,8 +1,17 @@
+// zone css pour la page subscribe.php
 .subscribe_title{
 	text-align: center;
 	font-size: 50px;
 	margin-top: 100px;
   	margin-bottom: 80px;
+}
+
+// zone css pour la zone header.php
+#subscribe{
+	float: right;
+}
+#subscribe a{
+	text-decoration: none;
 }
 
 .name input,

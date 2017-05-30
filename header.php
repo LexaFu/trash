@@ -13,16 +13,26 @@ session_start();
     	<title>trash</title>
     </head>
     <body>
-        <header class="head">
-            <a href="index.php" class="logo"></a>
+        <header>
+            <div class="logo">
+                <a href="index.php"></a>
+            </div>
+            <div class="main-title">
+                <h1>Eco City</h1>
+            </div>
             <?php
             if (!isset($_SESSION['id_user'])) {?>
-                <a href="login.php" id="login" class="login">Connexion</a> 
-                <a href="subscribe.php" id="subscribe" class="login">Pas encore inscrit ?</a>
+                <div class="login_area">
+                    <a href="login.php" id="login" class="login">Connexion</a> 
+                    <a href="subscribe.php" id="subscribe" class="subscribe">Pas encore inscrit ?</a>
+                </div>
             <?php }else{?>
                 <a href="logout.php" id="login" class="login">déconnexion</a>
             <?php }?>
         </header>
+
+<?php include "connect.php"; ?>
+
         
         
        

@@ -39,25 +39,13 @@ h2 {
 }
 
 /* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
-#subscribe {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 20px;
-}
-
-/* line 37, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
-#subscribe a {
-  text-decoration: none;
-}
-
-/* line 41, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
 #login_recover {
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
 }
 
-/* line 47, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+/* line 38, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
 #login_recover a {
   text-decoration: none;
 }
@@ -70,13 +58,23 @@ footer {
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
-.head {
+h1 {
+  text-align: center;
+  display: block;
+  font-size: 30px !important;
+  color: #cc1761;
+}
+
+/* line 7, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+header {
   width: 100%;
   background-color: #61812c;
   height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
-/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .logo {
   background-image: url("../images/logo.png");
   background-position: center;
@@ -84,20 +82,19 @@ footer {
   background-repeat: no-repeat;
   width: 20%;
   height: 100%;
-  float: left;
 }
 
-/* line 19, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
-.login {
-  float: right;
+/* line 28, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.login_area {
+  width: 20%;
 }
 
-/* line 23, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
-.subscribe {
-  float: right;
+/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.main-title {
+  width: 20%;
 }
 
-/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 2, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 .subscribe_title {
   text-align: center;
   font-size: 50px;
@@ -105,7 +102,17 @@ footer {
   margin-bottom: 80px;
 }
 
-/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 10, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+#subscribe {
+  float: right;
+}
+
+/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+#subscribe a {
+  text-decoration: none;
+}
+
+/* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 .name input,
 .surname input,
 .email input,
