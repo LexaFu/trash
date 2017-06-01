@@ -22,7 +22,7 @@ while ($donnees = $req->fetch()){
 
 		<form action="team_page_post.php?id_url=<?php echo $donnees['id_reporting']; ?> " method="post">
 			<input name="status" type="number" value="<?php echo $donnees['status']; ?>">
-			<button type="submit" >Valider</button>
+			<button type="submit">Valider</button>
 		</form>
 	</div>
 
@@ -34,7 +34,7 @@ while ($donnees = $req->fetch()){
 }
 ?>
 	<div class="map" id="map">
-    </div>
+  </div>
 
 <?php 
 	$requete = $bdd->query("SELECT * FROM reporting");
@@ -47,9 +47,9 @@ var map;
 var marker;
 
   // Lors de l'évènement au click de la souris on fait appel à la fonction placerMarker(avec les coordonnées)
-  google.maps.event.addListener(map, 'click', function(event) {
-    placerMarker(event.latLng);
-  });
+  // google.maps.event.addListener(map, 'click', function(event) {
+  //   placerMarker(event.latLng);
+  // });
 
    // Affiche les marqueurs disponible dans la BDD
   <?php foreach ($check as $tab){ ?>
@@ -60,9 +60,9 @@ var marker;
     });
 
 <?php } ?>
-}
+
  
-// Fonction qui est appeller lors du click pour placer un marqueur
+// Fonction qui est appellée lors du click pour placer un marqueur
 function placerMarker(location) {
 
     if(marker){ // Si le marqueur existe
@@ -89,7 +89,6 @@ function placerMarker(location) {
 // Lancement de la construction de la carte google map
 google.maps.event.addDomListener(window, 'load', initial);
 </script>
-	
 	
 
 <?php include "footer.php"; ?>

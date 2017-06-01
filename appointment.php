@@ -1,6 +1,5 @@
 <?php 
 
-
 ob_start();
 include "header.php";
 
@@ -11,7 +10,6 @@ if (!isset($_SESSION['id_user'])) {
         }else{
 
 ?>
-               
 
 <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
    	 		<div class="last_name">

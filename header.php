@@ -6,6 +6,7 @@ session_start();
 <html lang="fr">
     <head>
     	<meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="res/stylesheets/style.css">
         <link rel="stylesheet" href="res/stylesheets/screen.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">

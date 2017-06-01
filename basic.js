@@ -91,25 +91,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
   });
 
 
- //ajout test marqueurs
-
-
-//  var liste_des_points=[
-//   [45.777107436477785, 3.0818769335746765],
-//   [45.8, 3.2]
-// ];
- 
-// var imageMarqueur = new google.maps.MarkerImage('images/Marqueur.png'), new google.maps.Size(24, 24), new google.maps.Point(0,0), new google.maps.Point(12, 12));//je suppose ici que c'est la même image pour tous les marqueurs sinon il faut mettre cette ligne dans la boucle
- 
- 
-// var i=0,li=liste_des_points.length;
-// while(i<li){
-//   new google.maps.Marker({
-//           position: new google.maps.LatLng(liste_des_points[i][0], liste_des_points[i][1]),
-//           map: Carte,
-//           title: "Marqueur-"+i,
-//           icon: imageMarqueur,
-//      });
-//   i++;
-// }
 
