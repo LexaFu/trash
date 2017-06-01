@@ -34,27 +34,27 @@ if (!isset($_SESSION['id_user'])) {
 
         <div class="address">
             <label for="address">numero de rue</label>
-            <input type="text" name="address" id="street_number" />
+            <input type="text" name="street_number" id="street_number" />
         </div>
 
         <div class="address">
             <label for="address">Rue</label>
-            <input type="text" name="address" id="route" />
+            <input type="text" name="street" id="route" />
         </div>
 
         <div class="address">
             <label for="address">Ville</label>
-            <input type="text" name="address" id="locality" />
+            <input type="text" name="city" id="locality" />
         </div>
 
       <div class="address">
             <label for="address">Région</label>
-            <input type="text" name="address" id="administrative_area_level_1" />
+            <input type="text" name="region" id="administrative_area_level_1" />
         </div>
 
         <div class="address">
             <label for="address">Pays</label>
-            <input type="text" name="address" id="country" />
+            <input type="text" name="country" id="country" />
         </div>
 
 
