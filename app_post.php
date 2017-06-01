@@ -24,14 +24,18 @@ session_start();
 // }
 
 //prépare la requête à insérer dans la base de données
-$req = $bdd->prepare('INSERT INTO appointment (last_name, first_name, phone, address, cp, description, type, size, date_appointment) VALUES(:last_name, :first_name, :phone, :address, :cp, :description, :type, :size, :date_appointment)');
+$req = $bdd->prepare('INSERT INTO appointment (last_name, first_name, phone, street_number, street, city, region, country, cp, description, type, size, date_appointment) VALUES(:last_name, :first_name, :phone, :street_number, :street, :city, :region, :country, :cp, :description, :type, :size, :date_appointment)');
 
 //exécute la requête et les données sont enregistrées sous forme de tableau
 $req->execute(array(
 	'last_name'			=>$_POST['last_name'],
 	'first_name'		=>$_POST['first_name'],
 	'phone'				=>$_POST['phone'],
-	'address'			=>$_POST['address'],
+	'street_number'		=>$_POST['street_number'],
+	'street'			=>$_POST['street'],
+	'city'				=>$_POST['city'],
+	'region'			=>$_POST['region'],
+	'country'			=>$_POST['country'],
 	'cp'				=>$_POST['cp'],
 	'description'		=>$_POST['description'],
 	// 'img'=>$_FILES['img']['name'],
@@ -42,7 +46,7 @@ $req->execute(array(
 
 //Celà envoie un message et redirige vers la page index
 $msg = 'Rendez vous enregistré';
-   header('Location: index.php');
+   // header('Location: index.php');
 ?>
 
 
