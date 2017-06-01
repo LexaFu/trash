@@ -14,9 +14,9 @@ session_start();
     </head>
     <body>
         <header>
-            <div class="logo">
-                <a href="index.php"></a>
-            </div>
+        
+            <a href="index.php" class="logo">
+            </a>
 
             <div class="main-title">
                 <h1>Eco City</h1>

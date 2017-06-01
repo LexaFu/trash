@@ -75,7 +75,7 @@ header {
 }
 
 /* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
-.logo {
+header .logo {
   background-image: url("../images/logo.png");
   background-position: center;
   background-size: contain;

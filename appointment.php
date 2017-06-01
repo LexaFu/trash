@@ -2,6 +2,7 @@
 
 
 ob_start();
+include "header.php";
 
 if (!isset($_SESSION['id_user'])) {
 
@@ -9,8 +10,7 @@ if (!isset($_SESSION['id_user'])) {
 
         }else{
 
- include "header.php";
-        	?>
+?>
                
 
 <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
