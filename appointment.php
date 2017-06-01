@@ -13,12 +13,12 @@ if (!isset($_SESSION['id_user'])) {
 <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
    	 		<div class="last_name">
         		<label for="last_name">Nom</label>
-            <input type="text" name="last_name" />
+            <input type="text" name="last_name">
         </div>
 
         <div class="first_name">
             <label for="first_name">Prénom</label>
-            <input type="text" name="first_name" />
+            <input type="text" name="first_name">
         </div>
 
       <div class="phone">
@@ -27,44 +27,44 @@ if (!isset($_SESSION['id_user'])) {
       </div>
 
 		  <div id="locationField">
-          <label for="address">Adresse complète</label>
+          <label for="address">Rechercher une adresse: </label>
           <input id="autocomplete" placeholder="Enter your address"
-             onFocus="geolocate()" type="text"></input>
+             onFocus="geolocate()" type="text">
       </div>
 
         <div class="address">
-            <label for="address">numero de rue</label>
+            <label for="address">numero de rue: </label>
             <input type="text" name="street_number" id="street_number" />
         </div>
 
         <div class="address">
-            <label for="address">Rue</label>
+            <label for="address">Rue: </label>
             <input type="text" name="street" id="route" />
         </div>
 
         <div class="address">
-            <label for="address">Ville</label>
+            <label for="address">Ville: </label>
             <input type="text" name="city" id="locality" />
         </div>
 
       <div class="address">
-            <label for="address">Région</label>
+            <label for="address">Région: </label>
             <input type="text" name="region" id="administrative_area_level_1" />
         </div>
 
         <div class="address">
-            <label for="address">Pays</label>
+            <label for="address">Pays: </label>
             <input type="text" name="country" id="country" />
         </div>
 
 
         <div class="cp">
-            <label for="cp">Code postal</label>
+            <label for="cp">Code postal: </label>
             <input type="text" name="cp" id="postal_code"></input>
         </div>
 
       <div class="type">
-      <label for="type">Type d'encombrant</label>
+      <label for="type">Type d'encombrant: </label>
       <select name="type">
         <option>Mobilier</option>
         <option>Mécanique</option>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['id_user'])) {
       </div>
 
       <div class="size">
-      <label for="size">Taille de l'encombrant</label>
+      <label for="size">Taille de l'encombrant: </label>
       <select name="size">
         <option>Petit</option>
         <option>Moyen</option>
@@ -82,7 +82,7 @@ if (!isset($_SESSION['id_user'])) {
       </div>
 
       <div class="description">
-            <label for="description">Description</label>
+            <label for="description">Description: </label>
             <textarea name="description" size="250" rows="10" cols="50"></textarea>
         </div>
 

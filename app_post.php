@@ -46,7 +46,7 @@ $req->execute(array(
 
 //Celà envoie un message et redirige vers la page index
 $msg = 'Rendez vous enregistré';
-   // header('Location: index.php');
+   header('Location: index.php');
 ?>
 
 
