@@ -6,7 +6,7 @@ session_start();
  include 'connect.php';
 
  //prépare la requête à insérer dans la base de données
-$req = $bdd->prepare('INSERT INTO reporting (address, cp, description, type, size) VALUES(:address, :cp, :description, :type, :size)');
+$req = $bdd->prepare('INSERT INTO reporting (address, cp, description, type, size, date_create) VALUES(:address, :cp, :description, :type, :size, NOW() )');
 
 //exécute la requête et les données sont enregistrées sous forme de tableau
 $req->execute(array(
@@ -20,6 +20,6 @@ $req->execute(array(
 
 //Celà envoie un message et redirige vers la page index
 
-   header('Location: index.php');
+    header('Location: index.php');
 ?>
 
