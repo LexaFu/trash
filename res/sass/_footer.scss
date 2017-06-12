@@ -1,9 +1,37 @@
 footer
 {
   width: 100vw;
-  background-color: $olive;
+  background-color: $vert_tilleul;
   height: 80px;
   // position: absolute;
   // bottom: 0;
 }
+.container{
+	width: 90%;
+}
+.footer-content{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.footer-content p{
+	font-size: 15px;
+	color: $olive;
+}
+.appointment{
+	text-align: center;
+}
+.calendar{
+	background-image: url("../images/calendar.png");
+	background-size: 100%;
+	padding: 20px;
+	background-repeat: no-repeat;
+	margin: 5px;
+}
+.reporting{
+	background-image: url("../images/urgent.png");
+	background-size: 100%;
+	padding: 20px;
+	background-repeat: no-repeat;
+	margin: 5px;
 
+}

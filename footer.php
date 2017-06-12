@@ -1,9 +1,15 @@
     <footer>
-      <div>
-      	<!-- formulaire de contact -->
-      	<a href="appointment.php">Rendez vous</a>
-        <a href="reporting.php">Urgent</a>
-	    </div>
+        <div class="footer-content">
+        	<!-- formulaire de contact -->
+          <div class="appointment">
+          	<a href="appointment.php" class="calendar"></a>
+            <p>RDV</p>
+          </div>
+          <div class="appointment">
+            <a href="reporting.php" class="reporting"></a>
+            <p>Urgent!</p>
+  	     </div>
+      </div>
     </footer>
   </body>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY"></script>

@@ -10,15 +10,16 @@ session_start();
         <link rel="stylesheet" href="res/stylesheets/style.css">
         <link rel="stylesheet" href="res/stylesheets/screen.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styleMe.css">
     	<title>trash</title>
     </head>
     <body>
         <header>
-        
+            
             <a href="index.php" class="logo">
             </a>
-
+     
             <div class="main-title">
                 <h1>Eco City</h1>
             </div>

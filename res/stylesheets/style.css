@@ -1,4 +1,20 @@
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+body {
+  background-image: url("../images/pattern.png");
+}
+
+/* line 4, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+header {
+  margin-bottom: 10px !important;
+}
+
+/* line 11, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
 h2 {
   font-family: 'roboto', sans-serif !important;
 }
@@ -53,8 +69,48 @@ h2 {
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
 footer {
   width: 100vw;
-  background-color: #61812c;
+  background-color: #ede75c;
   height: 80px;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.container {
+  width: 90%;
+}
+
+/* line 12, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.footer-content p {
+  font-size: 15px;
+  color: #61812c;
+}
+
+/* line 20, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.appointment {
+  text-align: center;
+}
+
+/* line 23, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.calendar {
+  background-image: url("../images/calendar.png");
+  background-size: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+
+/* line 30, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.reporting {
+  background-image: url("../images/urgent.png");
+  background-size: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  margin: 5px;
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
@@ -68,7 +124,7 @@ h1 {
 /* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 header {
   width: 100%;
-  background-color: #61812c;
+  background-color: #ede75c;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -102,17 +158,17 @@ header .logo {
   margin-bottom: 80px;
 }
 
-/* line 10, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 #subscribe {
   float: right;
 }
 
-/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 #subscribe a {
   text-decoration: none;
 }
 
-/* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 20, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 .name input,
 .surname input,
 .email input,
@@ -157,13 +213,13 @@ textarea,
   margin-bottom: 15px;
 }
 
-/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 10, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .map {
   height: 80vh;
   width: 100%;
 }
 
-/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
+/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/style.scss */
 .button {
   position: absolute;
 }
