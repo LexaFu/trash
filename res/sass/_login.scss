@@ -1,17 +1,17 @@
-.login_form
-{
+.login_form{
 	width : 100%;
+	text-align: center;
 }
 
 .login_title{
   text-align: center;
   font-size: 50px;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
 .username input, .password input{
-	width: 98%;
+	width: 100%;
 	margin-top: 20px;
 	padding: 10px;
 	text-align: center;
@@ -19,25 +19,17 @@
 	border: 1px solid;
 	border-color: grey;
 }
-.validate input{
-	width: 98%;
+.login-bottom{
 	text-align: center;
-	border: 1px solid;
-	border-color: grey;
-	padding: 10px;
-	font-size: 30px;
-	margin-top: 20px;
 }
 
-#login_recover{
-	text-align: center;
-	margin-top: 20px;
-	font-size: 20px;
-}
+// #login_recover #subscribe{
+// 	text-align: center;
+// 	margin-top: 20px;
+// 	font-size: 20px;
+// 	display: inline-block;
+// }
 
-#login_recover a{
-	text-decoration: none;
-}
 
 
 

@@ -12,14 +12,17 @@
         <div class="password">
 	        <input type="password" name="password" id="password" placeholder="Mot de passe">
         </div>
-        <div class="validate">
-	        <input type="submit" value="Valider">
-        </div>
-        <div id="subscribe">
-            <a href="subscribe.php">s'incrire</a>
-        </div>
-        <div id="login_recover">
-		  <a href="">mot de passe oublié ?</a>
+        
+        <input type="submit" value="Valider" class="validate">
+        
+        <div class="login-bottom">
+            <div id="login_recover">
+    		  <a href="">mot de passe oublié ?</a>
+            </div>
+
+            <div id="subscribe">
+                <a href="subscribe.php">s'incrire</a>
+            </div>
         </div>
     </form>
 </div>

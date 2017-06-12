@@ -5,8 +5,7 @@ h1{
   color: $rubis;
 }
 
-header
-{
+header{
   width: 100%;
   background-color: $vert_tilleul;
   height: 10vh;
@@ -14,8 +13,7 @@ header
   justify-content: space-between;
 }
 
-header .logo
-{
+header .logo{
   background-image: url("../images/logo.png");
   background-position: center;
   background-size: contain;
@@ -26,6 +24,14 @@ header .logo
 
 .login{
   background-image: url("../images/login.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+.logout{
+  background-image: url("../images/logout2.ico");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

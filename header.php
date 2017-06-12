@@ -31,7 +31,7 @@ session_start();
 
             <?php }else{?>
 
-                <a href="logout.php" id="login" class="login">déconnexion</a>
+                <a href="logout.php" id="logout" class="logout"></a>
                 
             <?php }?>
         </header>
