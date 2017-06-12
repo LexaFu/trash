@@ -2,13 +2,19 @@
 
 ob_start();
 include "header.php";
+?>
 
+<?php 
+  // REQUETE SQL
+  $req = $bdd->query("SELECT DATE_FORMAT(date_create,'%d/%m/%Y à %Hh%imin' ) AS date_create_fr FROM appointment ORDER BY date_create LIMIT 10");
+?>
+
+<?php
 if (!isset($_SESSION['id_user'])) {
 
         header('Location: index.php'); 
 
         }else{ ?>
-               
 
 <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
    	 		<div class="last_name">

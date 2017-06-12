@@ -24,12 +24,12 @@ session_start();
 // }
 
 //prépare la requête à insérer dans la base de données
-$req = $bdd->prepare('INSERT INTO appointment (last_name, first_name, phone, street_number, street, city, region, country, cp, description, type, size, date_appointment) VALUES(:last_name, :first_name, :phone, :street_number, :street, :city, :region, :country, :cp, :description, :type, :size, :date_appointment)');
+$req = $bdd->prepare('INSERT INTO appointment (first_name, last_name, phone, street_number, street, city, region, country, cp, description, type, size, date_appointment, date_create) VALUES(:first_name, :last_name, :phone, :street_number, :street, :city, :region, :country, :cp, :description, :type, :size, :date_appointment, NOW() )');
 
 //exécute la requête et les données sont enregistrées sous forme de tableau
 $req->execute(array(
-	'last_name'			=>$_POST['last_name'],
 	'first_name'		=>$_POST['first_name'],
+	'last_name'			=>$_POST['last_name'],
 	'phone'				=>$_POST['phone'],
 	'street_number'		=>$_POST['street_number'],
 	'street'			=>$_POST['street'],

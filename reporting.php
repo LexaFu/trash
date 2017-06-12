@@ -4,7 +4,7 @@
 
 <?php 
 	// REQUETE SQL
-	$req = $bdd->query("SELECT DATE_FORMAT(date_create,'%d/%m/%Y à %Hh%imin' ) AS date_create_fr FROM reporting ORDER BY date_create");
+	$req = $bdd->query("SELECT DATE_FORMAT(date_create,'%d/%m/%Y à %Hh%imin' ) AS date_create_fr FROM reporting ORDER BY date_create LIMIT 5");
 ?>
 
 	<form class="reporting_form" action="rep_post.php" method="post" enctype="multipart/form-data">
