@@ -1,5 +1,6 @@
 <?php require 'header.php'; ?>
 
+
 <div class="subscribe_title">
     <h2>Veuillez remplir les champs</h2>
 </div>
