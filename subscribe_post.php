@@ -12,7 +12,7 @@ $phone = strip_tags ($_POST['phone']);
 
 
 
-$newUser = $bdd->prepare('INSERT INTO users( username, password, first_name, last_name, email, address, phone, date_inscription) VALUES (:username, :password, :first_name, :last_name, :email, :address, :phone, NOW() )');
+$newUser = $bdd->prepare('INSERT INTO users( username, password, first_name, last_name, email, address, phone, date_create) VALUES (:username, :password, :first_name, :last_name, :email, :address, :phone, NOW() )');
 
 
 $newUser->execute(array(
