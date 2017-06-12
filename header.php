@@ -26,12 +26,13 @@ session_start();
         
             <?php
             if (!isset($_SESSION['id_user'])) {?>
-                <div class="login_area">
-                    <a href="login.php" id="login" class="login">Connexion</a> 
-                    <a href="subscribe.php" id="subscribe" class="subscribe">Pas encore inscrit ?</a>
-                </div>
+
+                <a href="login.php" id="login" class="login"></a>
+
             <?php }else{?>
+
                 <a href="logout.php" id="login" class="login">déconnexion</a>
+                
             <?php }?>
         </header>
 

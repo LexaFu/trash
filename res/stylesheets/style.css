@@ -141,11 +141,16 @@ header .logo {
 }
 
 /* line 27, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
-.login_area {
+.login {
+  background-image: url("../images/login.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 20%;
+  height: 100%;
 }
 
-/* line 30, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+/* line 35, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
 .main-title {
   width: 20%;
 }

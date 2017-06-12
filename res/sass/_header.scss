@@ -24,8 +24,13 @@ header .logo
   height: 100%;
 }
 
-.login_area{
+.login{
+  background-image: url("../images/login.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 20%;
+  height: 100%;
 }
 .main-title{
   width: 20%;
