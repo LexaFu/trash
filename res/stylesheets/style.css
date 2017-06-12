@@ -1,6 +1,6 @@
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
 body {
-  background-image: url("../images/pattern.png");
+  background-image: url("../images/main-bcg.png");
 }
 
 /* line 4, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
@@ -175,7 +175,6 @@ header .logo {
 .name input,
 .surname input,
 .email input,
-.phone input,
 .validate {
   width: 100vw;
   margin-top: 20px;
@@ -221,6 +220,35 @@ textarea,
 .map {
   height: 100%;
   width: 100%;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.appointment_container {
+  height: 80vh;
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.last_name input,
+.first_name input,
+.phone input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/* line 18, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.autocomplete {
+  border: solid 3px;
+  border-color: #37431e;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=../stylesheets/style.map */

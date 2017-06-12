@@ -14,103 +14,111 @@ if (!isset($_SESSION['id_user'])) {
 
         header('Location: login.php'); 
 
-        }else{ ?>
+    }else{ ?>
 
-<form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
-   	 		<div class="last_name">
-        		<label for="last_name">Nom</label>
-            <input type="text" name="last_name">
-        </div>
+<div class="appointment_container">
+  <form class= "form" action="app_post.php" method="post" enctype="multipart/form-data">
+ 		<div class="last_name">
+  		<!-- <label for="last_name">Nom</label> -->
+      <input type="text" name="last_name" placeholder="Nom">
+    </div>
 
-        <div class="first_name">
-            <label for="first_name">Prénom</label>
-            <input type="text" name="first_name">
-        </div>
+    <div class="first_name">
+      <!-- <label for="first_name">Prénom</label> -->
+      <input type="text" name="first_name" placeholder="Prénom">
+    </div>
 
-      <div class="phone">
-        <label for="phone">Téléphone</label>
-        <input type="text" name="phone">
-      </div>
+    <div class="phone">
+      <!-- <label for="phone">Téléphone</label> -->
+      <input type="text" name="phone" placeholder="Téléphone: ">
+    </div>
 
-		  <div id="locationField">
-          <label for="address">Rechercher une adresse: </label>
-          <input id="autocomplete" placeholder="Enter your address"
+
+    <div class="autocomplete">
+
+  	  <div id="locationField">
+        <!-- <label for="address">Rechercher une adresse: </label> -->
+        <input id="autocomplete" placeholder="Entrer un adresse: "
              onFocus="geolocate()" type="text">
       </div>
 
-        <div class="address">
-            <label for="address">numero de rue: </label>
-            <input type="text" name="street_number" id="street_number" />
-        </div>
-
-        <div class="address">
-            <label for="address">Rue: </label>
-            <input type="text" name="street" id="route" />
-        </div>
-
-        <div class="address">
-            <label for="address">Ville: </label>
-            <input type="text" name="city" id="locality" />
-        </div>
+      <div class="address">
+        <!-- <label for="address">numero de rue: </label> -->
+        <input type="text" name="street_number" id="street_number" >
+      </div>
 
       <div class="address">
-            <label for="address">Région: </label>
-            <input type="text" name="region" id="administrative_area_level_1" />
-        </div>
+        <!-- <label for="address">Rue: </label> -->
+        <input type="text" name="street" id="route" placeholder="Rue: ">
+      </div>
 
-        <div class="address">
-            <label for="address">Pays: </label>
-            <input type="text" name="country" id="country" />
-        </div>
+      <div class="address">
+        <!-- <label for="address">Ville: </label> -->
+        <input type="text" name="city" id="locality" placeholder="Ville: ">
+      </div>
+
+      <div class="address">
+        <!-- <label for="address">Région: </label> -->
+        <input type="text" name="region" id="administrative_area_level_1" placeholder="Région: ">
+      </div>
+
+      <div class="address">
+        <!-- <label for="address">Pays: </label> -->
+        <input type="text" name="country" id="country" placeholder="Pays: ">
+      </div>
 
 
-        <div class="cp">
-            <label for="cp">Code postal: </label>
-            <input type="text" name="cp" id="postal_code"></input>
-        </div>
+      <div class="cp">
+        <!-- <label for="cp">Code postal: </label> -->
+        <input type="text" name="cp" id="postal_code" placeholder="Code Postal: ">
+      </div>
+      
+    </div>
 
-      <div class="type">
+
+    <div class="date_appointment" > 
+      <input type="text" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous">
+    </div>
+
+    <div class="type">
       <label for="type">Type d'encombrant: </label>
       <select name="type">
         <option>Mobilier</option>
         <option>Mécanique</option>
         <option>Environnemental</option>
       </select>
-      </div>
+    </div>
 
-      <div class="size">
+    <div class="size">
       <label for="size">Taille de l'encombrant: </label>
       <select name="size">
         <option>Petit</option>
         <option>Moyen</option>
         <option>Grand</option>
       </select>
-      </div>
+    </div>
 
-      <div class="description">
-            <label for="description">Description: </label>
-            <textarea name="description" size="250" rows="10" cols="50"></textarea>
-        </div>
+    <div class="description">
+      <!-- <label for="description">Description: </label> -->
+      <textarea name="description" size="250" rows="10" cols="50" placeholder="Déscription: "></textarea>
+    </div>
 
-        <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
                 
-            <!-- <input type="file" name="img" id="img" required="true"/> -->
+    <!-- <input type="file" name="img" id="img" required="true"/> -->
 
-            <!-- <input type=submit value="submit" name="upload"/> -->
-            <div class="date_appointment" > 
-            <p>Date: <input type="text" id="datepicker" name="date_appointment"></p>
-          </div>
+    <!-- <input type=submit value="submit" name="upload"/> -->
 
       
-      <div class="bouton">
-            <button type="submit">Envoyer</button>
-        </div>
-    </form>
+    <div class="bouton">
+      <button type="submit">Envoyer</button>
+    </div>
+  </form>
+</div>
 
 
 
-
-		    <script>
+<script>
 // This example displays an address form, using the autocomplete feature
 // of the Google Places API to help users fill in the information.
 
@@ -178,9 +186,9 @@ function geolocate() {
 }
 // [END region_geolocation]
 
-    </script>
+</script>
 
-	<?php } ?>
+<?php } ?>
 		
 <?php include "footer.php"; ?>
 
