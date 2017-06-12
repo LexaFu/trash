@@ -12,7 +12,7 @@ include "header.php";
 <?php
 if (!isset($_SESSION['id_user'])) {
 
-        header('Location: index.php'); 
+        header('Location: login.php'); 
 
         }else{ ?>
 
