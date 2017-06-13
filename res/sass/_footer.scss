@@ -1,10 +1,15 @@
 footer
 {
   width: 100vw;
-  background-color: $vert_tilleul;
   height: 10vh;
-  // position: absolute;
-  // bottom: 0;
+  background-image: url('../images/pattern.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
 }
 .container{
 	width: 90%;
@@ -15,7 +20,7 @@ footer
 }
 .footer-content p{
 	font-size: 15px;
-	color: $olive;
+	color: $vert_de_chrome;
 }
 .appointment{
 	text-align: center;
@@ -23,15 +28,15 @@ footer
 .calendar{
 	background-image: url("../images/calendar.png");
 	background-size: 100%;
-	padding: 20px;
+	padding: 14px;
 	background-repeat: no-repeat;
-	margin: 5px;
+	margin: 10px;
 }
 .reporting{
 	background-image: url("../images/urgent.png");
 	background-size: 100%;
-	padding: 20px;
+	padding: 14px;
 	background-repeat: no-repeat;
-	margin: 5px;
+	margin: 10px;
 
 }

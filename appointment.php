@@ -34,17 +34,19 @@ if (!isset($_SESSION['id_user'])) {
     </div>
 
 
-    <div class="autocomplete">
+    <div class="autocomplete_ctn">
 
   	  <div id="locationField">
         <!-- <label for="address">Rechercher une adresse: </label> -->
-        <input id="autocomplete" placeholder="Entrer un adresse: "
+        <input id="autocomplete" placeholder="Rechercher une adresse: "
              onFocus="geolocate()" type="text">
       </div>
 
+      <p>ou tapez la ici: </p>
+
       <div class="address">
         <!-- <label for="address">numero de rue: </label> -->
-        <input type="text" name="street_number" id="street_number" >
+        <input type="text" name="street_number" id="street_number" placeholder="Numéro de rue: ">
       </div>
 
       <div class="address">
@@ -57,10 +59,10 @@ if (!isset($_SESSION['id_user'])) {
         <input type="text" name="city" id="locality" placeholder="Ville: ">
       </div>
 
-      <div class="address">
-        <!-- <label for="address">Région: </label> -->
+ <!-- <div class="address">
+        <label for="address">Région: </label>
         <input type="text" name="region" id="administrative_area_level_1" placeholder="Région: ">
-      </div>
+      </div> -->
 
       <div class="address">
         <!-- <label for="address">Pays: </label> -->
@@ -72,7 +74,7 @@ if (!isset($_SESSION['id_user'])) {
         <!-- <label for="cp">Code postal: </label> -->
         <input type="text" name="cp" id="postal_code" placeholder="Code Postal: ">
       </div>
-      
+
     </div>
 
 
@@ -100,7 +102,7 @@ if (!isset($_SESSION['id_user'])) {
 
     <div class="description">
       <!-- <label for="description">Description: </label> -->
-      <textarea name="description" size="250" rows="10" cols="50" placeholder="Déscription: "></textarea>
+      <textarea name="description" size="250" rows="10" cols="50" placeholder="Description: "></textarea>
     </div>
 
     <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
@@ -127,7 +129,7 @@ var componentForm = {
   street_number: 'short_name',
   route: 'long_name',
   locality: 'long_name',
-  administrative_area_level_1: 'short_name',
+  // administrative_area_level_1: 'short_name',
   country: 'long_name',
   postal_code: 'short_name'
 };

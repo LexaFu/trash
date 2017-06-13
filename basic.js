@@ -16,14 +16,21 @@ function initialize() {
 // partie Geolocalisation
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      map.setCenter(pos);
+    var pos = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    };
+    map.setCenter(pos);
+
+    //ajoute un marker de localisation "vous êtes ici"
+    marker = new google.maps.Marker({
+    position: pos,
+    map: map,
+    title:"Vous êtes ici"
+    });
 
     infoWindow.setPosition(pos);
-    infoWindow.setContent('Vous êtes ici');
+    // infoWindow.setContent('Vous êtes ici');
     map.setCenter(pos);
     }, function () {
             handleLocationError(true, infoWindow, map.getCenter());
