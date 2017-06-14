@@ -34,7 +34,7 @@ $req->execute(array(
 
 // $msg = 'Vous êtes maintenant inscrit';
 
-header('Location: index.php?first_name='.$_GET['first_name'].'&last_name='.$_GET['last_name'].'');
+header('Location: header.php?first_name='.$_GET['first_name'].'&last_name='.$_GET['last_name'].'');
 
 // header('Location: index.php?msg=' . $msg);
 

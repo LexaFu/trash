@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +35,23 @@ session_start();
                 <a href="logout.php" id="logout" class="logout"></a>
                 
             <?php }?>
+
+            <!--si la session est active, selectionne par l'id les nom, prénom -->
+            <?php
+            if(isset($_SESSION['id_user'])) {
+            $req = $bdd->prepare('SELECT first_name, last_name FROM users WHERE id_user=:id_user');
+            $req->execute(array(
+            'id_user'=>$_SESSION['id_user'])); 
+            $resultat = $req-> fetch();
+            ?>
+
+            <!-- affiche le message avec données contenues -->
+            <p>Bonjour, <?php echo $resultat['first_name']?> <?php echo $resultat['last_name'];?></p>
+
+            <?php
+            }
+            ?>
+
         </header>
 
 <?php include "connect.php"; ?>
