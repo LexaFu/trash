@@ -6,7 +6,7 @@
 </div>
 
 <div class="subscribe_form">
-	<form action="subscribe_post.php" method="post">
+	<form action="subscribe_post.php" method="get">
 		<div class="name">
 			<input type="text" id="name" name="last_name" placeholder="Nom" required="required" maxlength="20">
 		</div>
