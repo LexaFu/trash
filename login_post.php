@@ -25,6 +25,9 @@ if (!$resultat) {
     session_start();
     $_SESSION['id_user'] = $resultat['id_user'];
     $_SESSION['pseudo'] = $login;
+    $_SESSION['authentified'] = true;
     header('Location: index.php');
 }
 ?>
+
+
