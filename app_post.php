@@ -24,7 +24,7 @@ session_start();
 // }
 
 //prépare la requête à insérer dans la base de données
-$req = $bdd->prepare('INSERT INTO appointment (first_name, last_name, phone, street_number, street, city, region, country, cp, description, type, size, date_appointment, date_create) VALUES(:first_name, :last_name, :phone, :street_number, :street, :city, :region, :country, :cp, :description, :type, :size, :date_appointment, NOW() )');
+$req = $bdd->prepare('INSERT INTO appointment (first_name, last_name, phone, street_number, street, city, country, cp, latitude, longitude, description, type, size, date_appointment, date_create) VALUES(:first_name, :last_name, :phone, :street_number, :street, :city, :country, :cp, :latitude, :longitude, :description, :type, :size, :date_appointment, NOW() )');
 
 //exécute la requête et les données sont enregistrées sous forme de tableau
 $req->execute(array(
@@ -34,9 +34,10 @@ $req->execute(array(
 	'street_number'		=>$_POST['street_number'],
 	'street'			=>$_POST['street'],
 	'city'				=>$_POST['city'],
-	'region'			=>$_POST['region'],
 	'country'			=>$_POST['country'],
 	'cp'				=>$_POST['cp'],
+	'latitude'			=>$_POST['latitude'],
+	'longitude'			=>$_POST['longitude'],
 	'description'		=>$_POST['description'],
 	// 'img'=>$_FILES['img']['name'],
 	'type'				=>$_POST['type'],

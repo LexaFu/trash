@@ -56,8 +56,7 @@
 		<div id="map" class="map">
 		</div>
 	</div>
-
-		
+	
 <?php 
 	include "footer.php"; 
 ?>

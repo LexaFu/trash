@@ -7,11 +7,11 @@ session_start();
     <head>
     	<meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="res/stylesheets/style.css">
         <link rel="stylesheet" href="res/stylesheets/screen.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styleMe.css">
+        <link rel="stylesheet" href="res/stylesheets/style.css">
     	<title>trash</title>
     </head>
     <body>

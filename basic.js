@@ -42,7 +42,7 @@ if (navigator.geolocation) {
     });
 
     // Add a marker at the center of the map.
-    addMarker(bordeaux, map);
+    // addMarker(bordeaux, map);
   
     } else {
         // Browser doesn't support Geolocation
