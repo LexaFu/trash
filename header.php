@@ -36,10 +36,16 @@ include "connect.php";
                 
             <?php }?>
 
+            <?php if(isset($_SESSION['id_user'])) { ?>
+                
+                <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
+
+            <?php } ?>
+
             <!--si la session est active, selectionne par l'id les nom, prénom -->
             <?php
             if(isset($_SESSION['id_user'])) {
-            $req = $bdd->prepare('SELECT first_name, last_name FROM users WHERE id_user=:id_user');
+            $req = $bdd->prepare('SELECT first_name, last_name, email, phone FROM users WHERE id_user=:id_user');
             $req->execute(array(
             'id_user'=>$_SESSION['id_user'])); 
             $resultat = $req-> fetch();
@@ -54,7 +60,7 @@ include "connect.php";
 
         </header>
 
-<?php include "connect.php"; ?>
+
 
         
         

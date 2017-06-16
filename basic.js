@@ -78,6 +78,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
     };
     firebase.initializeApp(config);
 
+// changement header location page header.php
+function modifHeaderLocation() {
+  alert("test");
+}
 
 // initialise le calendrier pour la prise de rendez-vous
  $( function() {
@@ -93,7 +97,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
 		dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
 		weekHeader: 'Sem.',
-		dateFormat: 'yy-mm-dd'
+		dateFormat: 'dd-mm-yy'
     });
   });
 
