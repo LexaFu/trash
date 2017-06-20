@@ -26,10 +26,9 @@
 			<input type="password" name="password" placeholder="Mot De Passe" required="required" maxlength="20">
 		</div>
 		<div >
-	        <button class="validate">Valider</button>
+	        <button id="validate" class="validate">Valider</button>
         </div>
 	</form>
 </div>
-
 
 <?php require 'footer.php'; ?>

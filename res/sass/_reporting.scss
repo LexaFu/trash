@@ -18,3 +18,16 @@ textarea,
 {
 	font-size: 15px;
 }
+
+.hidden {
+	opacity: 0;
+}
+
+#realSend {
+	float: right;
+	margin-right:10px;
+	transition: all 1s;
+}
+#realSend.hidden {
+	margin-right:100px;
+}
