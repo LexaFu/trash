@@ -11,7 +11,7 @@
 		<fieldset id="saisie">
 			<div class="address">
     			<!-- <label for="address">Adresse : </label> -->
-    			<input type="text" name="address" placeholder="Adresse" required>
+    			<input type="text" name="address" id="address" placeholder="Adresse" required>
 			</div>
 
 			<div class="cp">
@@ -53,7 +53,9 @@
 		
  		<div class="bouton">
     		<input type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">
-    		<input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden">
+    		<input  name="latitude" type="hidden" id="latitude" value="" />
+			<input  name="longitude" type="hidden" id="longitude" value="" />
+    		<input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
 		</div>
 
 	</form>
@@ -62,6 +64,10 @@
 		<div id="map" class="map">
 		</div>
 	</div>
+
+<?php 
+	include "footer.php"; 
+?>
 	<script>
 		// sélectionne le bouton preview par l'id, ajoute un évènement au clic en annulant la validation directe du formulaire. Création d'une variable form qui sélectionne reporting_form, renvoie l'élément par l'id et remplace son contenu par ce qui est saisi dans le formulaire dans l'espace 'previewArea'. Puis, rend visible le bouton 'realSend'
 		document.querySelector('#previewButton').addEventListener('click',function(e){
@@ -80,9 +86,13 @@
 			previewAreaContent += '<div>'+contenuDescription+'</div>';
 			document.getElementById('previewArea').innerHTML=previewAreaContent;
 			document.getElementById('realSend').className="";
-			},false);
+			$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+contenuAddress+'&key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY',function(results, status){
+				var coord = results.results[0].geometry.location;
+				form.longitude.value = coord.lng;
+				form.latitude.value = coord.lat;
+				var gps = JSON.stringify(results.results[0].geometry.location)
+				var previewArea = document.getElementById('previewArea');
+				previewArea.innerHTML=previewArea.innerHTML+'<div>'+gps+'</div>';
+			});
+		},false);
 	</script>
-	
-<?php 
-	include "footer.php"; 
-?>
