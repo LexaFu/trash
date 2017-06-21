@@ -17,24 +17,5 @@ $req->execute(array(
 	'type'				=>$_POST['type'],
 	'size'				=>$_POST['size']
 	));
-
- 
-if (isset($_POST['preview'])) { ?>
- 	<p>Vous avez noté un emcombrant de type <?php echo $_POST['type'];?>, de taille <?php echo $_POST['size'];?>, avec la description <?php echo $_POST['description'];?>, à l'adresse <?php echo $_POST['address'];?>
- 	
- 	<button type="submit" name="submit">Envoyer</button>
- 	<?php header('Location: index.php');?>
-<?php 
-} elseif (isset($_POST['submit'])) { 
-
-	header('Location: index.php');
- 
- 
-} else {
- 
-    echo "";
- 
-}
-
 ?>
 

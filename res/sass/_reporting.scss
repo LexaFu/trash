@@ -28,6 +28,14 @@ textarea,
 	margin-right:10px;
 	transition: all 1s;
 }
+
 #realSend.hidden {
 	margin-right:100px;
+}
+
+#previewArea {
+	display: flex;
+	margin-left: 700px;
+	margin-bottom: 15px;
+	padding: 0px;
 }
