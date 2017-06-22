@@ -10,7 +10,6 @@
 	<form class="reporting_form" action="rep_post.php" method="post" enctype="multipart/form-data">
 		<fieldset id="saisie">
 			<div class="address">
-    			<!-- <label for="address">Adresse : </label> -->
     			<input type="text" name="address" id="address" placeholder="Adresse" required>
 			</div>
 
@@ -42,14 +41,10 @@
     			<!-- <label for="description">Description</label> -->
     			<textarea name="description" size="250" rows="10" cols="50" placeholder="Description"></textarea>
 			</div>
-			<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
         </fieldset>
         <fieldset id="previewArea">
         	
         </fieldset>
-        <!-- <input type="file" name="img" id="img" required="true"/> -->
-
-        <!-- <input type=submit value="submit" name="upload"/> -->
 		
  		<div class="bouton">
     		<input type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">
@@ -86,6 +81,8 @@
 			previewAreaContent += '<div>'+contenuDescription+'</div>';
 			document.getElementById('previewArea').innerHTML=previewAreaContent;
 			document.getElementById('realSend').className="";
+
+			// création d'un géocode pour entrer latitude et longitude dans bdd
 			$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+contenuAddress+'&key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY',function(results, status){
 				var coord = results.results[0].geometry.location;
 				form.longitude.value = coord.lng;

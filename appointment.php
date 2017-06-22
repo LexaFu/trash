@@ -17,116 +17,115 @@ if (!isset($_SESSION['id_user'])) {
     }else{ ?>
 
 <div class="appointment_container">
-  <form class= "form" action="app_post.php" method="get" enctype="multipart/form-data">
- 		<div class="last_name">
-  		<!-- <label for="last_name">Nom</label> -->
-      <input type="text" name="last_name" placeholder="Nom">
-    </div>
+  <form class= "appointment_form" action="app_post.php" method="get" enctype="multipart/form-data">
+    <fieldset>
+ 		  <div class="last_name">
+  		  <!-- <label for="last_name">Nom</label> -->
+        <input type="text" name="last_name" placeholder="Nom" required>
+      </div>
 
-    <div class="first_name">
-      <!-- <label for="first_name">Prénom</label> -->
-      <input type="text" name="first_name" placeholder="Prénom">
-    </div>
+      <div class="first_name">
+        <!-- <label for="first_name">Prénom</label> -->
+        <input type="text" name="first_name" placeholder="Prénom" required>
+      </div>
 
-    <div class="phone">
-      <!-- <label for="phone">Téléphone</label> -->
-      <input type="text" name="phone" placeholder="Téléphone: ">
-    </div>
+      <div class="phone">
+        <!-- <label for="phone">Téléphone</label> -->
+        <input type="text" name="phone" placeholder="Téléphone: " required>
+      </div>
 
 
-    <div class="autocomplete_ctn">
+      <div class="autocomplete_ctn">
 
-  	  <div id="locationField">
-        <!-- <label for="address">Rechercher une adresse: </label> -->
-        <input id="autocomplete" placeholder="Rechercher une adresse: "
+  	    <div id="locationField">
+          <!-- <label for="address">Rechercher une adresse: </label> -->
+          <input id="autocomplete" placeholder="Rechercher une adresse: "
              onFocus="geolocate()" type="text">
-      </div>
+        </div>
 
-      <input type="hidden" id="lat" name="latitude">
-      <input type="hidden" id="lng" name="longitude">
+        <!-- <input type="hidden" id="lat" name="latitude">
+        <input type="hidden" id="lng" name="longitude"> -->
 
-      <p>ou tapez la ici: </p>
+        <p>ou tapez la ici: </p>
 
-      <div class="address">
-        <!-- <label for="address">numero de rue: </label> -->
-        <input type="text" name="street_number" id="street_number" placeholder="Numéro de rue: ">
-      </div>
+        <div class="address">
+          <input type="text" name="street_number" placeholder="Numéro de rue: ">
+        </div>
 
-      <div class="address">
-        <!-- <label for="address">Rue: </label> -->
-        <input type="text" name="street" id="route" placeholder="Rue: ">
-      </div>
+        <div class="address">
+          <!-- <label for="address">Rue: </label> -->
+          <input type="text" name="street" placeholder="Rue: " required>
+        </div>
 
-      <div class="address">
+        <div class="address">
         <!-- <label for="address">Ville: </label> -->
-        <input type="text" name="city" id="locality" placeholder="Ville: ">
+          <input type="text" name="city" placeholder="Ville: " required>
+        </div>
+
+        <div class="address">
+          <!-- <label for="address">Pays: </label> -->
+          <input type="text" name="country" placeholder="Pays: " required>
+        </div>
+
+
+        <div class="cp">
+          <!-- <label for="cp">Code postal: </label> -->
+          <input type="text" name="cp" placeholder="Code Postal: " pattern="33[0-9]{3}" maxlength="5" minlength="5" required>
+        </div>
+
       </div>
 
- <!-- <div class="address">
-        <label for="address">Région: </label>
-        <input type="text" name="region" id="administrative_area_level_1" placeholder="Région: ">
-      </div> -->
 
-      <div class="address">
-        <!-- <label for="address">Pays: </label> -->
-        <input type="text" name="country" id="country" placeholder="Pays: ">
+      <div class="date_appointment" > 
+        <input type="text" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>
       </div>
 
-
-      <div class="cp">
-        <!-- <label for="cp">Code postal: </label> -->
-        <input type="text" name="cp" id="postal_code" placeholder="Code Postal: ">
+      <div class="hour">
+        <label>Heure: </label> 
+        <input class="hour_appointment" type="time" name="hour_appointment" required>
       </div>
 
-    </div>
+      <div class="type">
+        <label for="type">Type d'encombrant: </label>
+        <select name="type">
+          <option>Mobilier</option>
+          <option>Mécanique</option>
+          <option>Environnemental</option>
+        </select>
+      </div>
 
+      <div class="size">
+        <label for="size">Taille de l'encombrant: </label>
+        <select name="size">
+          <option>Petit</option>
+          <option>Moyen</option>
+          <option>Grand</option>
+        </select>
+      </div>
 
-    <div class="date_appointment" > 
-      <input type="text" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous">
-    </div>
-
-    <div class="hour">
-      <label>Heure: </label> 
-      <input class="hour_appointment" type="time" name="hour_appointment">
-    </div>
-
-    <div class="type">
-      <label for="type">Type d'encombrant: </label>
-      <select name="type">
-        <option>Mobilier</option>
-        <option>Mécanique</option>
-        <option>Environnemental</option>
-      </select>
-    </div>
-
-    <div class="size">
-      <label for="size">Taille de l'encombrant: </label>
-      <select name="size">
-        <option>Petit</option>
-        <option>Moyen</option>
-        <option>Grand</option>
-      </select>
-    </div>
-
-    <div class="description">
-      <!-- <label for="description">Description: </label> -->
-      <textarea name="description" size="250" rows="10" cols="50" placeholder="Description: "></textarea>
-    </div>
-
-    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
-                
-    <!-- <input type="file" name="img" id="img" required="true"/> -->
-
-    <!-- <input type=submit value="submit" name="upload"/> -->
+      <div class="description">
+        <!-- <label for="description">Description: </label> -->
+        <textarea name="description" size="250" rows="10" cols="50" placeholder="Description: "></textarea>
+      </div>
+    </fieldset>
+    <fieldset id="previewArea">
+          
+    </fieldset>
 
       
     <div class="bouton">
-      <button type="submit" onclick="getLatLong()">Envoyer</button>
+      <button type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">Prévisualiser avant d'envoyer</button>
+      <input  name="latitude" type="hidden" id="latitude" value="" />
+      <input  name="longitude" type="hidden" id="longitude" value="" />
+      <input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
     </div>
   </form>
 </div>
 
-
+<?php 
+}
+  include "footer.php"; 
+?>
 
 <script>
 // This example displays an address form, using the autocomplete feature
@@ -196,32 +195,40 @@ function geolocate() {
 }
 // [END region_geolocation]
 
+  
 
- /* Déclaration des variables globales */ 
- var geocoder = new google.maps.Geocoder();
- var addr, latitude, longitude;
+    // sélectionne le bouton preview par l'id, ajoute un évènement au clic en annulant la validation directe du formulaire. Création d'une variable form qui sélectionne reporting_form, renvoie l'élément par l'id et remplace son contenu par ce qui est saisi dans le formulaire dans l'espace 'previewArea'. Puis, rend visible le bouton 'realSend'
+    document.querySelector('#previewButton').addEventListener('click',function(e){
+      e.preventDefault();
+      var form = document.querySelector('.appointment_form');
+      var contenuLastName = form.last_name.value;
+      var contenuFirstName = form.first_name.value;
+      var contenuPhone = form.phone.value;
+      var contenuAddress = form.street_number.value +' '+form.street.value+''+form.city.value+''+form.country.value;
+      var contenuCp = form.cp.value;
+      var contenuType = form.type.value;
+      var contenuSize = form.size.value;
+      var contenuDescription = form.description.value;
+      var previewAreaContent = '';
+      previewAreaContent += '<div>'+contenuLastName+'</div>';
+      previewAreaContent += '<div>'+contenuFirstName+'</div>';
+      previewAreaContent += '<div>'+contenuPhone+'</div>';
+      previewAreaContent += '<div>'+contenuAddress+'</div>';
+      previewAreaContent += '<div>'+contenuCp+'</div>';
+      previewAreaContent += '<div>'+contenuType+'</div>';
+      previewAreaContent += '<div>'+contenuSize+'</div>';
+      previewAreaContent += '<div>'+contenuDescription+'</div>';
+      document.getElementById('previewArea').innerHTML=previewAreaContent;
+      document.getElementById('realSend').className="";
 
- /* Fonction chargée de géolocaliser l'adresse */ 
- function getLatLong(){
-  /* Récupération du champ "adresse" */ 
-  addr = document.getElementByClassName('address').value;
-  /* Tentative de géocodage */ 
-  geocoder.geocode( { 'address': addr}, function(results, status) {
-   /* Si géolocalisation réussie */ 
-   if (status == google.maps.GeocoderStatus.OK) {
-    /* Récupération des coordonnées */ 
-    latitude = results[0].geometry.location.lat();
-    longitude = results[0].geometry.location.lng();
-   }
-  });
- }
-
-
-</script>
-
-<?php } ?>
-		
-<?php include "footer.php"; ?>
-
-
-
+      // création d'un géocode pour entrer latitude et longitude dans bdd
+      $.get('https://maps.googleapis.com/maps/api/geocode/json?address='+contenuAddress+'&key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY',function(results, status){
+        var coord = results.results[0].geometry.location;
+        form.longitude.value = coord.lng;
+        form.latitude.value = coord.lat;
+        var gps = JSON.stringify(results.results[0].geometry.location)
+        var previewArea = document.getElementById('previewArea');
+        previewArea.innerHTML=previewArea.innerHTML+'<div>'+gps+'</div>';
+      });
+    },false);
+  </script>
