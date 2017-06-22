@@ -34,8 +34,8 @@
 				</select>
 			</div>
 			<div class="obstruction">
-          		<label><input name="obstruction" type="radio" required>Gênant</label>
-          		<label><input name="obstruction" type="radio" required>Dangereux</label><br>
+          		<label><input name="obstruction" type="radio" value="G">Gênant</label>
+          		<label><input name="obstruction" type="radio" value="D">Dangereux</label><br>
 			</div>
 			<div class="description">
     			<!-- <label for="description">Description</label> -->
@@ -83,8 +83,12 @@
 			document.getElementById('realSend').className="";
 
 			// création d'un géocode pour entrer latitude et longitude dans bdd
-			$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+contenuAddress+'&key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY',function(results, status){
+			var adresseComplete = contenuAddress+', '+contenuCp+', France';
+			$.get('https://maps.googleapis.com/maps/api/geocode/json?address='+adresseComplete+'&key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY',function(results, status){
 				var coord = results.results[0].geometry.location;
+				var googleLabel = 'E';
+				if(form.obstruction.value) googleLabel = form.obstruction.value
+				addMarker(coord, currentMap,googleLabel,adresseComplete); // addMarker de basic.js
 				form.longitude.value = coord.lng;
 				form.latitude.value = coord.lat;
 				var gps = JSON.stringify(results.results[0].geometry.location)

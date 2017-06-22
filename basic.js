@@ -30,6 +30,7 @@ function initialize() {
     zoom: 15,
     center: bordeaux
   });
+  window.currentMap = map;
 
 // partie Geolocalisation
 if (navigator.geolocation) {
@@ -74,14 +75,17 @@ if (navigator.geolocation) {
 }
 
 // Adds a marker to the map.
-function addMarker(location, map) {
+function addMarker(location, map, onLetterLabel,description) {
   // Add the marker at the clicked location, and add the next-available label
   // from the array of alphabetical characters.
-  var marker = new google.maps.Marker({
+  var markerContent = {
     position: location,
-    label: labels[labelIndex++ % labels.length],
     map: map
-  });
+  }
+  if(onLetterLabel) markerContent.label = onLetterLabel;
+  else markerContent.label = labels[labelIndex++ % labels.length];
+  if(description) markerContent.title = description;
+  var marker = new google.maps.Marker(markerContent);
   // console.log(location.lat);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -141,4 +145,22 @@ myGeocoder.geocode( GeocoderOptions, GeocodingResult );
    }
   });
  }
+
+google.maps.event.addListener(map, 'click', function(event) {
+    placeMarker(event.latLng);
+  });
+ 
+var marker;
+function placeMarker(location) {
+  if(marker){ //on vérifie si le marqueur existe
+    marker.setPosition(location); //on change sa position
+  }else{
+    marker = new google.maps.Marker({ //on créé le marqueur
+      position: location,
+      map: map
+    });
+  }
+  inputLatitude.value=location.lat();
+  inputLongitude.value=location.lng();
+}
 
