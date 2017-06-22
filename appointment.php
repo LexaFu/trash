@@ -17,7 +17,7 @@ if (!isset($_SESSION['id_user'])) {
     }else{ ?>
 
 <div class="appointment_container">
-  <form class= "appointment_form" action="app_post.php" method="get" enctype="multipart/form-data">
+  <form class= "appointment_form" action="app_post.php" method="get" >
     <fieldset>
  		  <div class="last_name">
   		  <!-- <label for="last_name">Nom</label> -->
@@ -77,7 +77,7 @@ if (!isset($_SESSION['id_user'])) {
 
 
       <div class="date_appointment" > 
-        <input type="text" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>
+        <input type="date" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>
       </div>
 
       <div class="hour">
