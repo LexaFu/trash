@@ -1,6 +1,6 @@
 <?php 
 include "header.php"; 
-ob_start();
+
 
 // REQUETE SQL
 $req = $bdd->query('SELECT * FROM reporting ORDER BY id_reporting');
@@ -35,8 +35,10 @@ while ($donnees = $req->fetch()){
 }
 ?>
 
-	<div class="map" id="map">
-  </div>
+	<div class="map-container">
+	    <div class="map" id="map">
+	    </div>
+    </div>
 
 
 <script type="text/javascript">
