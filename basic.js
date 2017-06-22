@@ -75,7 +75,7 @@ if (navigator.geolocation) {
 }
 
 // Adds a marker to the map.
-function addMarker(location, map, onLetterLabel,description) {
+function addMarker(location, map, onLetterLabel,title) {
   // Add the marker at the clicked location, and add the next-available label
   // from the array of alphabetical characters.
   var markerContent = {
@@ -84,9 +84,9 @@ function addMarker(location, map, onLetterLabel,description) {
   }
   if(onLetterLabel) markerContent.label = onLetterLabel;
   else markerContent.label = labels[labelIndex++ % labels.length];
-  if(description) markerContent.title = description;
-  var marker = new google.maps.Marker(markerContent);
-  // console.log(location.lat);
+  if(title) markerContent.title = title;
+  return new google.maps.Marker(markerContent);
+  
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 

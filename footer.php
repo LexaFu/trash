@@ -12,9 +12,8 @@
       </div>
     </footer>
   </body>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY&signed_in=true&libraries=places&callback=initAutocomplete"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY&libraries=places"
+        ></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

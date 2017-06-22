@@ -63,6 +63,7 @@
 <?php 
 	include "footer.php"; 
 ?>
+	
 	<script>
 		// sélectionne le bouton preview par l'id, ajoute un évènement au clic en annulant la validation directe du formulaire. Création d'une variable form qui sélectionne reporting_form, renvoie l'élément par l'id et remplace son contenu par ce qui est saisi dans le formulaire dans l'espace 'previewArea'. Puis, rend visible le bouton 'realSend'
 		document.querySelector('#previewButton').addEventListener('click',function(e){
