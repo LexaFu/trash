@@ -11,6 +11,7 @@ include "connect.php";
         <link rel="stylesheet" href="res/stylesheets/screen.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="res/images/favicon-32x32.png" sizes="32x32" />
         <link rel="stylesheet" href="res/stylesheets/style.css">
     	<title>trash</title>
     </head>
