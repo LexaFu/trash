@@ -24,7 +24,7 @@ $resultat = $req-> fetch();
 </div>
 
 <?php 
-if ($resultat['status'] == 0) {
+if (isset($_GET['date_appointment']) && isset($_GET['hour_appointment'])) {
 $req = $bdd->prepare('SELECT date_appointment, hour_appointment FROM appointment');
 $req->execute(array(
 	'date_appointment'=>$_GET['date_appointment'],
@@ -35,5 +35,8 @@ $req->execute(array(
 <p>Vous avez pris rendez vous pour le <?php echo $_GET['date_appointment']; ?> à <?php echo $_GET['hour_appointment']; ?>.</p>
 
 <?php 
+} else { ?>
+	<p>Vous n'avez pris aucun rendez vous pour le moment</p>
+<?php
 }
 ?>            

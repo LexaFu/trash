@@ -20,7 +20,7 @@ $req->execute(array(
 	));
 	if(isset($_POST['latitude']) && isset($_POST['longitude'])){
 
-  echo 'Vos coordonnées ont bien été insérées en base de données.';
+  header('Location: index.php');
  }else
    echo 'Problème rencontré dans les valeurs passées en paramètres';
 
