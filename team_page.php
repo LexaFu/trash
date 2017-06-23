@@ -24,13 +24,14 @@ while ($donnees = $req->fetch()) {
 	</table>
 </div>
 <?php
-// REQUETE SQL
+// REQUETE SQL qui sélectionne toutes les données de reporting rangées par id
 $req = $bdd->query('SELECT * FROM reporting ORDER BY id_reporting');
 $req->execute(array(
 ));
 ?>
 
 <script>
+// pour mettre les marqueurs sur la carte de couleurs, suivant status
 var mapStatusIcone = {
 '':'http://maps.google.com/mapfiles/marker_red.png',
 'reserved':'http://maps.google.com/mapfiles/marker_yellow.png',
@@ -73,11 +74,10 @@ while ($donnees = $req->fetch()){
 
 		},1000);
 		</script>
-
-		<!--<form action="team_page_post.php?id_url=<?php echo $donnees['id_reporting']; ?> " method="post">-->
+			<!-- changement de status au click -->
 			<button onclick="bookIt(<?php echo $donnees['id_reporting']; ?>)">Je m'en occupe</button>
 			<button onclick="done(<?php echo $donnees['id_reporting']; ?>)">C'est fait</button>
-		<!--</form>-->
+		
 	</div>
 
 <?php
