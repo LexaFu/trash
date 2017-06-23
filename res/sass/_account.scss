@@ -1,6 +1,37 @@
 .data_user{
-	height: 70vh;
-	background-color: #FFF;
+	height: 74vh;
+	background-color: #F9F9F9;
+	padding-top: 10px;
+}
+.dt_u_ctn{
+	width: 70%;
+	height: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.apt_ctn{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	// margin-top: 10px;
+}
+.data_user label{
+	display: block;
+	width: 40%;
+	float: left;
+	margin-bottom: 10px;
+}
+.data_user input{
+	width: 50%;
 	border: solid 1px;
-	border-color: black;
+	border-color: lightgrey;
+	float: right;
+	margin-bottom: 10px;
+}
+.dt_u_ctn p{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	background-color: lightgrey;
+	text-align: center;
 }

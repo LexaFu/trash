@@ -1,10 +1,6 @@
-<meta charset="utf-8">
 <?php
-
-// pour rester connecter
-session_start();
-
- include 'connect.php';
+ob_start();
+include "header.php";
 
 //prépare la requête à insérer dans la base de données
 $req = $bdd->prepare('INSERT INTO appointment (first_name, last_name, phone, street_number, street, city, country, cp, latitude, longitude, description, type, size, date_appointment, hour_appointment, date_create) VALUES(:first_name, :last_name, :phone, :street_number, :street, :city, :country, :cp, :latitude, :longitude, :description, :type, :size, :date_appointment, :hour_appointment, NOW() )');
