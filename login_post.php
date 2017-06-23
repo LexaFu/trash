@@ -1,17 +1,17 @@
 <?php
-// inclu le connect qui fait la liaison avec la base de données
+// inclue le connect qui fait la liaison avec la base de données
 include 'connect.php';
 
 $pass_hache = sha1($_POST['password']); //crypte le password
 $login = $_POST['username'];
 
 //prépare la base de données
-$req = $bdd->prepare('SELECT id_user, status FROM users WHERE username = :usernameREQ AND password = :passwordREQ');
+$req = $bdd->prepare('SELECT id_user, status, password, recovery_password FROM users WHERE username = :usernameREQ AND (password = :passwordREQ OR recovery_password = :passwordREQ)');
 
 // execute l'envoi à la base de données
 $req->execute(array(
     'usernameREQ'   => $login,
-    'passwordREQ'=> $pass_hache
+    'passwordREQ'   => $pass_hache
 ));
 
 $resultat = $req-> fetch();
@@ -28,15 +28,23 @@ if (!$resultat) {
     $_SESSION['pseudo'] = $login;
     $_SESSION['status'] = $resultat['status'];
     $_SESSION['authentified'] = true;
-} 
 
- if($_SESSION['status'] == 1) { 
-// On lui souhaite la bienvenue 
-// Son pseudo etant egalement en session 
-header('Location: team_page.php');
-    die();
-// On affiche les differentes actions qui lui sont accordees 
-} else {
+    // si le mot de passe crypté est égal à recovery password contenu dans $resultat, et est différent du mot de passe,
+    if ($pass_hache === $resultat['recovery_password'] && $resultat['recovery_password'] !== $resultat['password']){
+        //prépare le remplacement dans table users du mot de passe 
+        $req = $bdd->prepare('UPDATE users SET password=:password WHERE recovery_password=:password');
+        // l'enregistre en crypté
+        $req->execute(array(
+            'password' => $pass_hache
+        )); 
+    }
+
+    if($_SESSION['status'] == 1) {  
+    header('Location: team_page.php');
+        die();
+    
+    } else {
 	header('Location: index.php');
-    die();
+        die();
+    }
 }   

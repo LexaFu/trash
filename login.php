@@ -18,7 +18,7 @@
             
             <div class="login-bottom">
                 <div id="login_recover">
-        		  <a href="">mot de passe oublié ?</a>
+        		  <a href="mdpO.php">mot de passe oublié ?</a>
                 </div>
 
                 <div id="subscribe">

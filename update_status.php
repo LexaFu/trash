@@ -12,7 +12,7 @@ if (isset($_GET['reserve'])){
 	echo 'Pas pris en charge pour le moment';
 }
 
- //prépare la requête à insérer dans la base de données
+//prépare la requête à insérer dans la base de données
 $req = $bdd->prepare('UPDATE reporting SET status=:status, who_do_it=:who, handle_date=NOW() WHERE id_reporting=:id');
 
 
