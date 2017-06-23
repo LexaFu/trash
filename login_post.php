@@ -40,11 +40,14 @@ if (!$resultat) {
     }
 
     if($_SESSION['status'] == 1) {  
-    header('Location: team_page.php');
+        header('Location: team_page.php');
         die();
+
+    } elseif($_SESSION['status'] == 2) {
+        header('Location: super_admin.php');
     
     } else {
-	header('Location: index.php');
+	   header('Location: index.php');
         die();
     }
 }   
