@@ -336,4 +336,12 @@ td {
   border: 1px solid black;
 }
 
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_account.scss */
+.data_user {
+  height: 70vh;
+  background-color: #FFF;
+  border: solid 1px;
+  border-color: black;
+}
+
 /*# sourceMappingURL=../stylesheets/style.map */

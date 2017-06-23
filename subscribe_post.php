@@ -1,4 +1,5 @@
 <?php
+// ob_start();
 include 'connect.php';
 
 
@@ -14,8 +15,10 @@ $req->execute(array(
 	'phone'		 => $_GET['phone']
 ));
 
+$msg = 'Vous êtes maintenant inscrit';
 
-header('Location: header.php?first_name='.$_GET['first_name'].'&last_name='.$_GET['last_name'].'&email='.$_GET['email'].'&phone='.$_GET['phone'].'');
+
+header('Location: index.php?first_name='.$_GET['first_name'].'&last_name='.$_GET['last_name'].'&email='.$_GET['email'].'&phone='.$_GET['phone'].''.$msg);
 
 include 'footer.php'; 
 
