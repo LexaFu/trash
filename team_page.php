@@ -24,20 +24,25 @@ while ($donnees = $req->fetch()) {
 	</table>
 </div>
 <?php
-// REQUETE SQL qui sélectionne toutes les données de reporting rangées par id
+// REQUETE SQL qui sélectionne toutes les données de reporting affichées en ordre croissant de l'id
 $req = $bdd->query('SELECT * FROM reporting ORDER BY id_reporting');
 $req->execute(array(
 ));
 ?>
 
 <script>
-// pour mettre les marqueurs sur la carte de couleurs, suivant status
+// pour mettre les marqueurs sur la carte en différentes couleurs, suivant status
 var mapStatusIcone = {
-'':'http://maps.google.com/mapfiles/marker_red.png',
+'':'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
 'reserved':'http://maps.google.com/mapfiles/marker_yellow.png',
 'collected':'http://maps.google.com/mapfiles/marker_green.png'	
 };
+
+
+// Déclaration de l'objet qui définira les limites de la map  
 var markerList = {};
+var bounds = '';
+// si en cours, jaune
 function bookIt(id_reporting){
 	console.log(markerList);
 		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['reserved']});
@@ -45,6 +50,7 @@ function bookIt(id_reporting){
 			console.log(data);
 	});
 };
+// si fait, en vert
 function done(id_reporting){
 		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['collected']});
 		$.get("update_status.php?done="+id_reporting, function(data, status) {
@@ -71,11 +77,14 @@ while ($donnees = $req->fetch()){
 				var status = '<?php echo $donnees['status']; ?>';
 				markerList[id_reporting] = addMarker(coord,currentMap,' ');
 				markerList[id_reporting].setOptions({'icon' : mapStatusIcone[status]});
-
+				if(!bounds) bounds = new google.maps.LatLngBounds();
+				bounds.extend(new google.maps.LatLng(coord.lat, coord.lng)); 
+				currentMap.fitBounds(bounds);
 		},1000);
 		</script>
-			<!-- changement de status au click -->
+			<!-- changement de status au click sur bouton Je m'en occupe -->
 			<button onclick="bookIt(<?php echo $donnees['id_reporting']; ?>)">Je m'en occupe</button>
+			<!-- sur bouton C'est fait -->
 			<button onclick="done(<?php echo $donnees['id_reporting']; ?>)">C'est fait</button>
 		
 	</div>
@@ -86,6 +95,16 @@ while ($donnees = $req->fetch()){
     
 	}
 }
+
+if($_SESSION['status'] !== 2) { 
+        
+    
+    } else { ?>
+	   <button>Modifier</button>
+       <button>Supprimer</button>
+    <?php die();
+    }
+ 
 ?>
 
 	<div class="map-container">
