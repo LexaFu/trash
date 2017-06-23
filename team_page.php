@@ -2,19 +2,28 @@
 include "header.php"; 
 
 $req = $bdd->query('SELECT * FROM appointment WHERE DATE (date_appointment) = CURDATE() ORDER BY hour_appointment');
-while ($donnees = $req->fetch()) {
-
-echo $donnees['hour_appointment'];
-echo $donnees['last_name'];
-echo $donnees['phone'];
-
 ?>
-
 <div class="apt">
-	<p>Vous avez un rendez vous aujourd'hui, à <?php echo $donnees['hour_appointment']; ?>, avec une personne dont le nom est <?php echo $donnees['last_name'] ?>. Son numéro de téléphone est le <?php echo $donnees['phone'] ?>.</p>
-</div>
+	<table>
+		<tr>
+			<th>heure rendez vous</th>
+	 		<th>nom de famille</th>
+	 		<th>téléphone</th>
+	 	</tr>
+<?php
+while ($donnees = $req->fetch()) {
+?>
+	 	<tr>
+	 		<td><?php echo $donnees['hour_appointment']; ?></td>
+	 		<td><?php echo $donnees['last_name']; ?></td>
+	 		<td><?php echo $donnees['phone']; ?></td>
+	 	</tr>
 <?php
 }
+?>
+	</table>
+</div>
+<?php
 // REQUETE SQL
 $req = $bdd->query('SELECT * FROM reporting ORDER BY id_reporting');
 $req->execute(array(
