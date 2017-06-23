@@ -21,9 +21,9 @@ include "connect.php";
             </a>
      
             <div class="main-title">
-                <h1>Eco City</h1>
-            </div>
 
+                <h1>Eco City</h1>
+            
             <!--si la session est active, selectionne par l'id les nom, prénom -->
             <?php
             if(isset($_SESSION['id_user'])) {
@@ -34,7 +34,7 @@ include "connect.php";
             ?>
 
             <!-- affiche le message avec données contenues -->
-            <p>Bonjour, <?php echo $resultat['first_name']?></p>
+            <p>Bonjour <?php echo $resultat['first_name']?></p>
 
             <?php
             }
@@ -45,6 +45,8 @@ include "connect.php";
                 <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
 
             <?php } ?>
+
+            </div>
         
             <?php
             if (!isset($_SESSION['id_user'])) {?>

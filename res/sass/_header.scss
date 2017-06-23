@@ -1,8 +1,10 @@
 h1{
   text-align: center;
   display: block;
-  font-size: 30px!important;
+  font-size: 25px!important;
   color: $rubis;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 header{
@@ -12,7 +14,7 @@ header{
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  height: 10vh;
+  height: 13vh;
   display: flex;
   justify-content: space-between;
 }
@@ -23,7 +25,8 @@ header .logo{
   background-size: contain;
   background-repeat: no-repeat;
   width: 20%;
-  height: 100%;
+  height: 80%;
+  margin-top: 10px;
 }
 
 .login{
@@ -32,7 +35,8 @@ header .logo{
   background-size: contain;
   background-repeat: no-repeat;
   width: 20%;
-  height: 100%;
+  height: 80%;
+  margin-top: 10px;
 }
 .logout{
   background-image: url("../images/logout2.ico");
@@ -40,8 +44,19 @@ header .logo{
   background-size: contain;
   background-repeat: no-repeat;
   width: 20%;
-  height: 100%;
+  height: 80%;
+  margin-top: 10px;
+}
+.account{
+  font-size: 14px;
 }
 .main-title{
-  width: 20%;
+  text-align: center;
 }
+
+
+
+
+
+
+
