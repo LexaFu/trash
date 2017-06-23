@@ -32,7 +32,7 @@ $req->execute(array(
 	))
 ?>
 
-<p>Vous avez pris rendez vous le <?php echo $_GET['date_appointment']; ?> à <?php echo $_GET['hour_appointment']; ?>.</p>
+<p>Vous avez pris rendez vous pour le <?php echo $_GET['date_appointment']; ?> à <?php echo $_GET['hour_appointment']; ?>.</p>
 
 <?php 
 }
