@@ -1,1 +1,331 @@
-body{background-image:url("../images/main-bcg.png")}a{text-decoration:none;display:inline-block}header{margin-bottom:10px !important}h2{font-family:'roboto', sans-serif !important}.login_container{height:80vh}.login_form{width:100%;text-align:center}.login_title{text-align:center;font-size:50px;margin-top:65px;margin-bottom:65px}.username input,.password input{width:100%;margin-top:20px;padding:10px;text-align:center;font-size:30px;border:1px solid;border-color:grey}.login-bottom{text-align:center}footer{width:100vw;height:10vh;background-image:url("../images/pattern.png");background-repeat:no-repeat;background-position:center;background-size:cover;overflow:hidden;height:10vh;display:flex;justify-content:space-between}.container{width:90%}.footer-content{display:flex;flex-wrap:nowrap}.footer-content p{font-size:15px;color:#37431e}.appointment{text-align:center}.calendar{background-image:url("../images/calendar.png");background-size:100%;padding:14px;background-repeat:no-repeat;margin:10px}.reporting{background-image:url("../images/urgent.png");background-size:100%;padding:14px;background-repeat:no-repeat;margin:10px}h1{text-align:center;display:block;font-size:30px !important;color:#cc1761}header{width:100%;background-image:url("../images/pattern.png");background-repeat:no-repeat;background-position:center;background-size:cover;overflow:hidden;height:10vh;display:flex;justify-content:space-between}header .logo{background-image:url("../images/logo.png");background-position:center;background-size:contain;background-repeat:no-repeat;width:20%;height:100%}.login{background-image:url("../images/login.png");background-position:center;background-size:contain;background-repeat:no-repeat;width:20%;height:100%}.logout{background-image:url("../images/logout2.ico");background-position:center;background-size:contain;background-repeat:no-repeat;width:20%;height:100%}.main-title{width:20%}.subscribe_title{text-align:center;font-size:50px;margin-top:100px;margin-bottom:80px}#subscribe{float:right}#subscribe a{text-decoration:none}.name input,.surname input,.email input,.validate{width:100vw;margin-top:20px;padding:5px;text-align:center;font-size:30px;border:1px solid;border-color:grey}.reporting_form{width:90%;margin-left:auto;margin-right:auto;border:solid 3px;border-color:#37431e;border-radius:10px;margin-bottom:15px;margin-top:15px}textarea,.address input,.cp input{font-size:15px}.hidden{opacity:0}#realSend{float:right;margin-right:10px;transition:all 1s}#realSend.hidden{margin-right:100px}#previewArea{display:flex;margin-left:70%;margin-bottom:15px;padding:0px;color:red}.map-container{width:98%;height:80vh;margin-right:auto;margin-left:auto;border:solid 3px;border-color:#37431e;border-radius:10px;margin-bottom:15px}.map{height:100%;width:100%}.appointment_container{height:80vh;width:60vw;margin-right:auto;margin-left:auto;text-align:center}.last_name input,.first_name input,.phone input{width:100%;text-align:center;margin-bottom:5px;font-size:15px}.description textarea{width:100%}.autocomplete_ctn{border:solid 3px;border-color:#37431e;width:100%;border-radius:10px;padding-top:10px;padding-bottom:10px;margin-top:10px;margin-bottom:10px}#locationField input{padding:5px;width:70%;text-align:center;font-size:16px;margin-bottom:5px}.autocomplete_ctn .address input,.autocomplete_ctn .cp input{width:70%}td,th{border:1px solid black}table{border-collapse:collapse}td{border:1px solid black}
+@charset "UTF-8";
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+body {
+  background-image: url("../images/main-bcg.png");
+}
+
+/* line 4, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+header {
+  margin-bottom: 10px !important;
+}
+
+/* line 11, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
+h2 {
+  font-family: 'roboto', sans-serif !important;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+.login_container {
+  height: 80vh;
+}
+
+/* line 4, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+.login_form {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+.login_title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+/* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+.username input, .password input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid;
+  border-color: grey;
+}
+
+/* line 25, /Users/Gio/Desktop/Talis/www/trash/res/sass/_login.scss */
+.login-bottom {
+  text-align: center;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-image: url("../images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 14, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.container {
+  width: 90%;
+}
+
+/* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* line 21, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.footer-content p {
+  font-size: 15px;
+  color: #37431e;
+}
+
+/* line 25, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.appointment {
+  text-align: center;
+}
+
+/* line 28, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.calendar {
+  background-image: url("../images/calendar.png");
+  background-size: 100%;
+  padding: 14px;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+/* line 35, /Users/Gio/Desktop/Talis/www/trash/res/sass/_footer.scss */
+.reporting {
+  background-image: url("../images/urgent.png");
+  background-size: 100%;
+  padding: 14px;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+h1 {
+  text-align: center;
+  display: block;
+  font-size: 30px !important;
+  color: #cc1761;
+}
+
+/* line 8, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+header {
+  width: 100%;
+  background-image: url("../images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 20, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+header .logo {
+  background-image: url("../images/logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+
+/* line 29, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.login {
+  background-image: url("../images/login.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+
+/* line 37, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.logout {
+  background-image: url("../images/logout2.ico");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 100%;
+}
+
+/* line 45, /Users/Gio/Desktop/Talis/www/trash/res/sass/_header.scss */
+.main-title {
+  width: 20%;
+}
+
+/* line 2, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.subscribe_title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+#subscribe {
+  float: right;
+}
+
+/* line 12, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+#subscribe a {
+  text-decoration: none;
+}
+
+/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.name input,
+.surname input,
+.email input,
+.validate {
+  width: 100vw;
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid;
+  border-color: grey;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.reporting_form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  border-color: #37431e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+textarea,
+.address input,
+.cp input {
+  font-size: 15px;
+}
+
+/* line 22, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 26, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#realSend {
+  float: right;
+  margin-right: 10px;
+  transition: all 1s;
+}
+
+/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#realSend.hidden {
+  margin-right: 100px;
+}
+
+/* line 36, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#previewArea {
+  display: flex;
+  margin-left: 70%;
+  margin-bottom: 15px;
+  padding: 0px;
+  color: red;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_index.scss */
+.map-container {
+  width: 98%;
+  height: 80vh;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid 3px;
+  border-color: #37431e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 11, /Users/Gio/Desktop/Talis/www/trash/res/sass/_index.scss */
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.appointment_container {
+  height: 80vh;
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.last_name input,
+.first_name input,
+.phone input {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/* line 17, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.description textarea {
+  width: 100%;
+}
+
+/* line 21, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.autocomplete_ctn {
+  border: solid 3px;
+  border-color: #37431e;
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 32, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+#locationField input {
+  padding: 5px;
+  width: 70%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* line 40, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.autocomplete_ctn .address input,
+.autocomplete_ctn .cp input {
+  width: 70%;
+}
+
+/* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_team_page.scss */
+td, th {
+  border: 1px solid black;
+  /* auront une bordure de 1px */
+}
+
+/* line 6, /Users/Gio/Desktop/Talis/www/trash/res/sass/_team_page.scss */
+table {
+  border-collapse: collapse;
+  /* Les bordures du tableau seront collées (plus joli) */
+}
+
+/* line 10, /Users/Gio/Desktop/Talis/www/trash/res/sass/_team_page.scss */
+td {
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=../stylesheets/style.map */

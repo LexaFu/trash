@@ -23,23 +23,6 @@ include "connect.php";
             <div class="main-title">
                 <h1>Eco City</h1>
             </div>
-        
-            <?php
-            if (!isset($_SESSION['id_user'])) {?>
-
-                <a href="login.php" id="login" class="login"></a>
-
-            <?php }else{?>
-
-                <a href="logout.php" id="logout" class="logout"></a>
-                
-            <?php }?>
-
-            <?php if(isset($_SESSION['id_user'])) { ?>
-                
-                <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
-
-            <?php } ?>
 
             <!--si la session est active, selectionne par l'id les nom, prénom -->
             <?php
@@ -51,11 +34,28 @@ include "connect.php";
             ?>
 
             <!-- affiche le message avec données contenues -->
-            <p>Bonjour, <?php echo $resultat['first_name']?> <?php echo $resultat['last_name'];?></p>
+            <p>Bonjour, <?php echo $resultat['first_name']?></p>
 
             <?php
             }
             ?>
+
+            <?php if(isset($_SESSION['id_user'])) { ?>
+                
+                <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
+
+            <?php } ?>
+        
+            <?php
+            if (!isset($_SESSION['id_user'])) {?>
+
+                <a href="login.php" id="login" class="login"></a>
+
+            <?php }else{?>
+
+                <a href="logout.php" id="logout" class="logout"></a>
+                
+            <?php }?>
 
         </header>
 
