@@ -10,6 +10,13 @@
             <p>Urgent!</p>
   	     </div>
       </div>
+      <div class="myAcount">
+        <?php if(isset($_SESSION['id_user'])) { ?>
+            
+            <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
+
+        <?php } ?>
+      </div>
     </footer>
   </body>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2vmtOF3IGymbEtscniaxzr6VxBQMRFY&libraries=places"

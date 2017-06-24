@@ -41,12 +41,6 @@ include "connect.php";
             }
             ?>
 
-            <?php if(isset($_SESSION['id_user'])) { ?>
-                
-                <a href="account.php?id_url<?php echo $_SESSION['id_user']; ?>" class="account">Mon compte</a>
-
-            <?php } ?>
-
             </div>
         
             <?php
