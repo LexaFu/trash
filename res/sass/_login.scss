@@ -1,37 +1,34 @@
 .login_container{
-	height: 80vh;
-}
-.login_form{
-	width : 100%;
-	text-align: center;
-}
-
-.login_title{
-  text-align: center;
-  font-size: 50px;
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
-
-.username input, .password input{
+	height: 74vh;
 	width: 100%;
-	margin-top: 20px;
-	padding: 10px;
-	text-align: center;
-	font-size: 30px;
-	border: 1px solid;
-	border-color: grey;
+	background-color: $bcg;
 }
-.login-bottom{
+.lgn_ctn{
+	width: 70%;
+	padding-top: 50px;
+	height: 74vh;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
+}
+.lgn_ctn form{
+	height: 75%;
+}
+.lgn_ctn .subsc_link{
+	height: 25%;
+}
+.lgn_ctn input{
+	width: 100%;
+	padding: 5px;
+	// display: block;
+	text-align: center;
+	border: solid 1px;
+	border-color: $bcg_dark;
+	margin-bottom: 10px;
 }
 
-// #login_recover #subscribe{
-// 	text-align: center;
-// 	margin-top: 20px;
-// 	font-size: 20px;
-// 	display: inline-block;
-// }
+
+
 
 
 

@@ -1,24 +1,3 @@
-h1{
-  text-align: center;
-  display: block;
-  font-size: 25px!important;
-  color: $rubis;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-header{
-  width: 100%;
-  background-image: url('../images/pattern.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  height: 13vh;
-  display: flex;
-  justify-content: space-between;
-}
-
 header .logo{
   background-image: url("../images/logo.png");
   background-position: center;

@@ -1,10 +1,41 @@
 // body{
 // 	background-image: url('../images/main-bcg.png');
 // }
-a{
-	text-decoration: none;
-	display: inline-block;
+h1{
+  text-align: center;
+  display: block;
+  font-size: 30px!important;
+  color: $rubis;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h2{
 	font-family: 'roboto', sans-serif !important;
+  font-size: 30px;
+}
+header{
+  width: 100%;
+  background-image: url('../images/pattern.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  width: 100vw;
+  height: 13vh;
+  background-image: url('../images/pattern.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
 }
