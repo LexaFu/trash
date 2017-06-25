@@ -1,42 +1,40 @@
-.reporting_form{
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	border: solid 3px;
-	border-color: $vert_de_chrome;
-	border-radius: 10px;
-	margin-bottom: 15px;
-	margin-top: 15px;
-	// background-color: $vert_de_chrome;
-	// opacity: 0.5;
+// .reporting_form{
+// 	width: 90%;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	border: solid 3px;
+// 	border-color: $vert_de_chrome;
+// 	border-radius: 10px;
+// 	margin-bottom: 15px;
+// 	margin-top: 15px;
 
-}
+// }
 
-textarea, 
-.address input,
-.cp input
-{
-	font-size: 15px;
-}
+// textarea, 
+// .address input,
+// .cp input
+// {
+// 	font-size: 15px;
+// }
 
-.hidden {
-	opacity: 0;
-}
+// .hidden {
+// 	opacity: 0;
+// }
 
-#realSend {
-	float: right;
-	margin-right:10px;
-	transition: all 1s;
-}
+// #realSend {
+// 	float: right;
+// 	margin-right:10px;
+// 	transition: all 1s;
+// }
 
-#realSend.hidden {
-	margin-right:100px;
-}
+// #realSend.hidden {
+// 	margin-right:100px;
+// }
 
-#previewArea {
-	display: flex;
-	margin-left: 70%;
-	margin-bottom: 15px;
-	padding: 0px;
-	color: red;
-}
+// #previewArea {
+// 	display: flex;
+// 	margin-left: 70%;
+// 	margin-bottom: 15px;
+// 	padding: 0px;
+// 	color: red;
+// }

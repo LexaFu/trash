@@ -13,23 +13,28 @@
 }
 .lgn_ctn form{
 	height: 75%;
-}
-.lgn_ctn .subsc_link{
-	height: 25%;
+	width: 100%;
 }
 .lgn_ctn input{
-	width: 100%;
-	padding: 5px;
-	// display: block;
+	width: 90%;
+	padding: 10px;
+	font-size: 16px;
 	text-align: center;
 	border: solid 1px;
+	border-radius: 5px;
 	border-color: $bcg_dark;
 	margin-bottom: 10px;
 }
-
-
-
-
+.subsc_link{
+	width: 90%;
+	border: solid 2px;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 5px;
+	border-color: $bcg_dark;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 

@@ -164,3 +164,4 @@ function placeMarker(location) {
   inputLongitude.value=location.lng();
 }
 
+
