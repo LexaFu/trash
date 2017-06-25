@@ -14,12 +14,16 @@ if (!isset($_SESSION['id_user'])) {
     <div class="appointment_container">
       <form class= "appointment_form" action="app_post.php" method="get" >
         <fieldset>
+
           <div class="adr_ctn">
-            <input type="text" name="street" placeholder="Rue: " required><br>
+            <p>Entrez vos coordonnées: </p>
+            <input type="text" name="street" placeholder="N° et nom de la rue: " required><br>
             <input type="text" name="city" placeholder="Ville: " required><br>
             <input type="text" name="cp" placeholder="Code Postal: " pattern="33[0-9]{3}" maxlength="5" minlength="5" required><br>
             <input type="text" name="phone" placeholder="Téléphone: " required><br>
           </div>
+
+          <div class="typeAndSize">
             <input type="date" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>  <br>
             <label>Heure: </label> 
             <input class="hour_appointment" type="time" name="hour_appointment" required><br>
@@ -37,19 +41,18 @@ if (!isset($_SESSION['id_user'])) {
               <option>Grand</option>
             </select>
             <br>
-            <textarea name="description" size="150" rows="5" cols="35" placeholder="Description: "></textarea>
-     
-        </fieldset>
-        <fieldset id="previewArea">
-              
-        </fieldset>
+            <textarea name="description" size="150" rows="5" cols="25" placeholder="Description: "></textarea>
+            <div class="bouton">
+              <button type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">Prévisualiser avant d'envoyer</button>
+              <input  name="latitude" type="hidden" id="latitude" value="" />
+              <input  name="longitude" type="hidden" id="longitude" value="" />
+              <input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
+            </div>
 
-        <div class="bouton">
-          <button type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">Prévisualiser avant d'envoyer</button>
-          <input  name="latitude" type="hidden" id="latitude" value="" />
-          <input  name="longitude" type="hidden" id="longitude" value="" />
-          <input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
-        </div>
+            </fieldset>
+            <fieldset id="previewArea">
+            </fieldset>
+          </div>
       </form>
     </div>
 

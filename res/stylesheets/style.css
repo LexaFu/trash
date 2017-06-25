@@ -18,7 +18,7 @@ h2 {
 /* line 16, /Users/Gio/Desktop/Talis/www/trash/res/sass/_global.scss */
 header {
   width: 100%;
-  background-image: url("../images/pattern.png");
+  background-image: url("../images/backgroundRecto.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,7 +32,7 @@ header {
 footer {
   width: 100vw;
   height: 13vh;
-  background-image: url("../images/pattern.png");
+  background-image: url("../images/backgroundVerso.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -78,7 +78,7 @@ a {
   text-align: center;
   border: solid 1px;
   border-radius: 5px;
-  border-color: lightgrey;
+  border-color: rgba(237, 231, 92, 0.5);
   margin-bottom: 10px;
 }
 
@@ -89,7 +89,7 @@ a {
   font-size: 16px;
   padding: 5px;
   border-radius: 5px;
-  border-color: lightgrey;
+  border-color: rgba(237, 231, 92, 0.5);
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,19 +232,63 @@ header .logo {
 
 /* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .appointment_form {
-  width: 100%;
-  padding-top: 10vh;
+  width: 70%;
+  height: 74vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 13, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.adr_ctn {
+  padding-top: 35px;
+  height: 30vh;
+}
+
+/* line 19, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .adr_ctn input {
+  display: block;
   font-size: 16px;
-  margin-bottom: 10px;
-  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   text-align: center;
+  border-style: none;
+  border-bottom: solid 1px;
+  border-bottom-color: lightgrey;
 }
 
-/* line 20, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 30, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.adr_ctn p {
+  width: 70%;
+  background-color: rgba(237, 231, 92, 0.5);
+  padding: 5px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 39, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.typeAndSize {
+  height: 44vh;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 45, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.typeAndSize label {
+  display: block;
+  width: 40%;
+  float: right;
+}
+
+/* line 50, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.typeAndSize input {
+  width: 40%;
+  float: right;
+}
+
+/* line 54, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .hidden {
   opacity: 0;
 }
@@ -270,13 +314,13 @@ td {
 .data_user {
   height: 74vh;
   background-color: #F9F9F9;
-  padding-top: 25px;
 }
 
-/* line 6, /Users/Gio/Desktop/Talis/www/trash/res/sass/_account.scss */
+/* line 5, /Users/Gio/Desktop/Talis/www/trash/res/sass/_account.scss */
 .dt_u_ctn {
   width: 70%;
   height: 50%;
+  padding-top: 25px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -300,7 +344,7 @@ td {
 .data_user input {
   width: 50%;
   border: solid 1px;
-  border-color: lightgrey;
+  border-color: rgba(237, 231, 92, 0.3);
   float: right;
   margin-bottom: 10px;
 }
@@ -311,7 +355,7 @@ td {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  background-color: lightgrey;
+  background-color: rgba(237, 231, 92, 0.3);
   text-align: center;
   margin-bottom: 35px;
 }

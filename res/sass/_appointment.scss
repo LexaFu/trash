@@ -7,16 +7,50 @@
 	background-color: $bcg;
 }
 .appointment_form{
-	width: 100%;
-	padding-top: 10vh;
+	width: 70%;
+	height: 74vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+.adr_ctn{
+	padding-top: 35px;
+	height: 30vh;
 }
 .adr_ctn input{
+	display: block;
 	font-size: 16px;
-	margin-bottom: 10px;
-	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 	text-align: center;
+	border-style: none;
+	border-bottom: solid 1px;
+	border-bottom-color: lightgrey;
 }
+.adr_ctn p{
+	width: 70%;
+	background-color: rgba(237,231,92,0.5);
+	padding: 5px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
 
+}
+.typeAndSize{
+	height: 44vh;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.typeAndSize label{
+	display: block;
+	width: 40%;
+	float: right;
+}
+.typeAndSize input{
+	width: 40%;
+	float: right;
+}
 .hidden {
 	opacity: 0;
 }
