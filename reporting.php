@@ -46,7 +46,7 @@ $req = $bdd->query("SELECT DATE_FORMAT(date_create,'%d/%m/%Y à %Hh%imin' ) AS d
 	    		<input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
 			</div>
 		</form>
-		<div class="mp-ctn">
+		<div class="map-container">
 			<div id="map" class="map">
 			</div>
 		</div>

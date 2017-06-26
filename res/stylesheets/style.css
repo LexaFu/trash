@@ -235,6 +235,51 @@ header .logo {
   background-color: #F9F9F9;
 }
 
+/* line 12, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.reporting_form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  border-color: #37431e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* line 24, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+textarea,
+.address input,
+.cp input {
+  font-size: 15px;
+}
+
+/* line 31, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 35, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#realSend {
+  float: right;
+  margin-right: 10px;
+  transition: all 1s;
+}
+
+/* line 41, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#realSend.hidden {
+  margin-right: 100px;
+}
+
+/* line 45, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
+#previewArea {
+  display: flex;
+  margin-left: 70%;
+  margin-bottom: 15px;
+  padding: 0px;
+  color: red;
+}
+
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_index.scss */
 .map-container {
   width: 100%;
