@@ -24,7 +24,7 @@ if (!isset($_SESSION['id_user'])) {
           </div>
 
           <div class="typeAndSize">
-            <input type="date" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>  <br>
+            <input id="datepicker" name="date_appointment" required>  <br>
             <label>Heure: </label> 
             <input class="hour_appointment" type="time" name="hour_appointment" required><br>
             <label for="type">Type d'encombrant: </label>
