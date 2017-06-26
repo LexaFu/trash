@@ -90,6 +90,7 @@ a {
   padding: 5px;
   border-radius: 5px;
   border-color: rgba(237, 231, 92, 0.5);
+  background-color: rgba(237, 231, 92, 0.5);
   margin-left: auto;
   margin-right: auto;
 }
@@ -261,7 +262,6 @@ header .logo {
 .adr_ctn p {
   width: 70%;
   background-color: rgba(237, 231, 92, 0.5);
-  padding: 5px;
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -279,7 +279,7 @@ header .logo {
 .typeAndSize label {
   display: block;
   width: 40%;
-  float: right;
+  float: left;
 }
 
 /* line 50, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
