@@ -7,9 +7,6 @@
 	text-align: center;
 	background-color: $bcg;
 }
-// .inside_ctn{
-// 	height: 100%;
-// }
 .appointment_form{
 	width: 70%;
 	height: 74vh;
@@ -23,7 +20,7 @@
 }
 .adr_ctn input{
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
@@ -54,7 +51,7 @@
 }
 .hourAndDate label{
 	float: left;
-	width: 40%;
+	width: 60%;
 }
 .hourAndDate input{
 	display: block;
@@ -63,23 +60,30 @@
 	text-align: center;
 }
 .typeAndSize{
+	display: block;
 	margin-top: 10px;
-	width: 100%;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
 }
-.type,
-.size{
-	width: 65%;
+.type{
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.type input{
+	display: block;
+	// float: left;
+	width: 20%;
+	margin-bottom: 2px;
+}
+.type label{
+	float: right;
+	width: 40%;
 	margin-bottom: 5px;
 }
-.type input,
-.size input{
-	float: left;
-}
-.type p,
-.size p{
-	background-color: transparent;
+.size{
+	margin-top: 5px;
 }
 .hidden {
 	opacity: 0;

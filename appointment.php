@@ -24,26 +24,28 @@ if (!isset($_SESSION['id_user'])) {
           <p>Informations sur l'encombrant</p>
           <div class="info_ctn">
             <div class="hourAndDate">
-              <label for="date_appointment">Date: </label>
-              <input id="datepicker" name="date_appointment" required>
-              <label>Heure: </label> 
-              <input class="hour_appointment" type="time" name="hour_appointment" required>
+              <label for="date_appointment">Date: <input id="datepicker" name="date_appointment" required></label>
+              <br>
+              <label>Heure: <input class="hour_appointment" type="time" name="hour_appointment" required></label> 
+              
             </div>
             <div class="typeAndSize">
               <div class="type">
-                <input type="radio" name="type" value="Mobilier">
-                <p>Mobilier</p>
-                <input type="radio" name="type" value="Mécanique">
-                <p>Mécanique</p> 
-                <input type="radio" name="type" value="Environnemental">
-                <p>Environnemental</p> 
+                <p>Indiquez le type d'encombrant</p>
+                <label for="type">Mobilier</label>
+                <input type="radio" id="mobilier"  name="type" value="Mobilier"><br>
+                <label for="mecanique">Mécanique</label>
+                <input type="radio" id="mecanique" name="type" value="Mécanique"><br>
+                <label for="Environnemental">Environnemental</label>
+                <input type="radio" id="Environnemental" name="type" value="Environnemental"><br>
+                <p>Indiquez sa taille</p>
               </div>
               
-              <div class="size">
-                <input type="radio" name="size" value="petit"><p>petit</p>
-                <input type="radio" name="size" value="moyen"><p>moyen</p>
-                <input type="radio" name="size" value="grand"><p>grand</p>
-              </div>
+              <select class="size" name="size" required>
+                <option>Petit</option>
+                <option>Moyen</option>
+                <option>Grand</option>
+              </select>
             </div>
             <br>
             <textarea name="description" size="150" rows="2" cols="25" placeholder="Description: "></textarea>
