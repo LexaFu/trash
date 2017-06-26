@@ -46,7 +46,7 @@ if (!isset($_SESSION['id_user'])) {
               </div>
             </div>
             <br>
-            <textarea name="description" size="150" rows="5" cols="25" placeholder="Description: "></textarea>
+            <textarea name="description" size="150" rows="2" cols="25" placeholder="Description: "></textarea>
             <div class="bouton">
               <button type="submit" id="previewButton" name="preview" value="Prévisualiser pour envoyer">Prévisualiser avant d'envoyer</button>
               <input  name="latitude" type="hidden" id="latitude" value="" />
