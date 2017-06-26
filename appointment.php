@@ -14,36 +14,37 @@ if (!isset($_SESSION['id_user'])) {
     <div class="appointment_container">
       <form class= "appointment_form" action="app_post.php" method="get" >
         <fieldset>
+          <p>Entrez vos coordonnées</p>
           <div class="adr_ctn">
-            <p>Entrez vos coordonnées: </p>
-            <input type="text" name="street" placeholder="N° et nom de la rue: " required><br>
-            <input type="text" name="city" placeholder="Ville: " required><br>
-            <input type="text" name="cp" placeholder="Code Postal: " pattern="33[0-9]{3}" maxlength="5" minlength="5" required><br>
-            <input type="text" name="phone" placeholder="Téléphone: " required><br>
+            <input type="text" name="street" placeholder="N° et nom de la rue: " required>
+            <input type="text" name="city" placeholder="Ville: " required>
+            <input type="text" name="cp" placeholder="Code Postal: " pattern="33[0-9]{3}" maxlength="5" minlength="5" required>
+            <input type="text" name="phone" placeholder="Téléphone: " required>
           </div>
-
-          <div class="typeAndSize">
-            <input id="datepicker" name="date_appointment" required>  <br>
-            <label>Heure: </label> 
-            <input class="hour_appointment" type="time" name="hour_appointment" required><br>
-            <!-- <label for="type">Type: </label>
-            <select name="type">
-              <option>Mobilier</option>
-              <option>Mécanique</option>
-              <option>Environnemental</option>
-            </select> -->
-            <div class="type">
-            <input type="radio" name="type" value="Mobilier">Mobilier
-            <input type="radio" name="type" value="Mécanique">Mécanique
-            <input type="radio" name="type" value="Environnemental">Environnemental
+          <p>Informations sur l'encombrant</p>
+          <div class="info_ctn">
+            <div class="hourAndDate">
+              <label for="date_appointment">Date: </label>
+              <input id="datepicker" name="date_appointment" required>
+              <label>Heure: </label> 
+              <input class="hour_appointment" type="time" name="hour_appointment" required>
             </div>
-            
-            <label for="size">Taille: </label>
-            <select name="size">
-              <option>Petit</option>
-              <option>Moyen</option>
-              <option>Grand</option>
-            </select>
+            <div class="typeAndSize">
+              <div class="type">
+                <input type="radio" name="type" value="Mobilier">
+                <p>Mobilier</p>
+                <input type="radio" name="type" value="Mécanique">
+                <p>Mécanique</p> 
+                <input type="radio" name="type" value="Environnemental">
+                <p>Environnemental</p> 
+              </div>
+              <br>
+              <div class="size">
+                <input type="radio" name="size" value="petit"><p>petit</p>
+                <input type="radio" name="size" value="moyen"><p>moyen</p>
+                <input type="radio" name="size" value="grand"><p>grand</p>
+              </div>
+            </div>
             <br>
             <textarea name="description" size="150" rows="5" cols="25" placeholder="Description: "></textarea>
             <div class="bouton">
