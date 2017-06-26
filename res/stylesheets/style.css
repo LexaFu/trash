@@ -227,7 +227,7 @@ header .logo {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: center;
   background-color: #F9F9F9;
 }
@@ -242,7 +242,7 @@ header .logo {
 
 /* line 19, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .adr_ctn {
-  padding-top: 15px;
+  padding-top: 10px;
   height: 25%;
   margin-bottom: 15px;
 }
@@ -272,8 +272,8 @@ header .logo {
 /* line 42, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .info_ctn {
   width: 100%;
-  height: 60%;
-  padding-top: 15px;
+  height: 50%;
+  padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
 }
