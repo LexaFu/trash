@@ -241,8 +241,8 @@ header .logo {
 
 /* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .adr_ctn {
-  padding-top: 35px;
-  height: 30vh;
+  padding-top: 15px;
+  height: 40%;
 }
 
 /* line 19, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
@@ -267,22 +267,22 @@ header .logo {
   margin-right: auto;
 }
 
-/* line 39, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 38, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .typeAndSize {
-  height: 44vh;
+  height: 40%;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 45, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 44, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .typeAndSize label {
   display: block;
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
-/* line 50, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 49, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .typeAndSize input {
   width: 40%;
   float: right;

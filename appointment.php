@@ -14,7 +14,6 @@ if (!isset($_SESSION['id_user'])) {
     <div class="appointment_container">
       <form class= "appointment_form" action="app_post.php" method="get" >
         <fieldset>
-
           <div class="adr_ctn">
             <p>Entrez vos coordonnées: </p>
             <input type="text" name="street" placeholder="N° et nom de la rue: " required><br>
@@ -27,14 +26,19 @@ if (!isset($_SESSION['id_user'])) {
             <input type="date" id="datepicker" name="date_appointment" placeholder="Date de rendez-vous" required>  <br>
             <label>Heure: </label> 
             <input class="hour_appointment" type="time" name="hour_appointment" required><br>
-            <label for="type">Type d'encombrant: </label>
+            <!-- <label for="type">Type: </label>
             <select name="type">
               <option>Mobilier</option>
               <option>Mécanique</option>
               <option>Environnemental</option>
-            </select>
-            <br>
-            <label for="size">Taille de l'encombrant: </label>
+            </select> -->
+            <div class="type">
+            <input type="radio" name="type" value="Mobilier">Mobilier
+            <input type="radio" name="type" value="Mécanique">Mécanique
+            <input type="radio" name="type" value="Environnemental">Environnemental
+            </div>
+            
+            <label for="size">Taille: </label>
             <select name="size">
               <option>Petit</option>
               <option>Moyen</option>
@@ -48,11 +52,10 @@ if (!isset($_SESSION['id_user'])) {
               <input  name="longitude" type="hidden" id="longitude" value="" />
               <input type="submit" id="realSend" name="realSend" value="Confirmer l'envoi" class="hidden" onclick="geolocalise()">
             </div>
-
-            </fieldset>
-            <fieldset id="previewArea">
-            </fieldset>
           </div>
+        </fieldset>
+        <fieldset id="previewArea">
+        </fieldset>
       </form>
     </div>
 
