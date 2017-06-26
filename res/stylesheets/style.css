@@ -382,7 +382,7 @@ textarea,
 
 /* line 69, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .type {
-  width: 40%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -391,22 +391,25 @@ textarea,
 .type input {
   display: block;
   width: 20%;
-  margin-bottom: 2px;
 }
 
 /* line 80, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .type label {
   float: right;
   width: 40%;
-  margin-bottom: 5px;
 }
 
 /* line 85, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+.type p {
+  width: 100%;
+}
+
+/* line 88, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .size {
   margin-top: 5px;
 }
 
-/* line 88, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 91, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .hidden {
   opacity: 0;
 }

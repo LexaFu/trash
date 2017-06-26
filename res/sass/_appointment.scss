@@ -67,7 +67,7 @@
 	margin-left: auto;
 }
 .type{
-	width: 40%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -75,12 +75,15 @@
 	display: block;
 	// float: left;
 	width: 20%;
-	margin-bottom: 2px;
+	// margin-bottom: 2px;
 }
 .type label{
 	float: right;
 	width: 40%;
-	margin-bottom: 5px;
+	// margin-bottom: 5px;
+}
+.type p{
+	width: 100%;
 }
 .size{
 	margin-top: 5px;
