@@ -45,14 +45,14 @@ var bounds = '';
 // si en cours, jaune
 function bookIt(id_reporting){
 	console.log(markerList);
-		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['reserved']});
+		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['en cours']});
 		$.get("update_status.php?reserve="+id_reporting, function(data, status) {
 			console.log(data);
 	});
 };
 // si fait, en vert
 function done(id_reporting){
-		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['collected']});
+		markerList[id_reporting].setOptions({'icon' : mapStatusIcone['collecte faite']});
 		$.get("update_status.php?done="+id_reporting, function(data, status) {
 			console.log(data);
 		});

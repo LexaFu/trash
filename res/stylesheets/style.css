@@ -178,34 +178,50 @@ header .logo {
 }
 
 /* line 2, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
-.subscribe_title {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-
-/* line 9, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 #subscribe {
   float: right;
 }
 
-/* line 12, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 6, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.subscribe_container {
+  background-color: #F9F9F9;
+}
+
+/* line 10, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.subscribe_ctn {
+  height: 74vh;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+/* line 18, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+.subscribe_form {
+  text-align: center;
+}
+
+/* line 22, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 #subscribe a {
   text-decoration: none;
 }
 
-/* line 15, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
+/* line 26, /Users/Gio/Desktop/Talis/www/trash/res/sass/_subscribe.scss */
 .name input,
 .surname input,
-.email input {
-  width: 100vw;
+.email input,
+.username input,
+.phone input,
+.password input,
+.validate input {
+  width: 90%;
   margin-top: 20px;
-  padding: 5px;
   text-align: center;
-  font-size: 30px;
-  border: 1px solid;
-  border-color: grey;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 5px;
+  border-bottom: solid 1px;
+  border-bottom-color: rgba(237, 231, 92, 0.8);
 }
 
 /* line 1, /Users/Gio/Desktop/Talis/www/trash/res/sass/_reporting.scss */
