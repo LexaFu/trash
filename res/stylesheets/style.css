@@ -312,21 +312,22 @@ header .logo {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
 }
 
-/* line 75, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 76, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .type input,
 .size input {
   float: left;
 }
 
-/* line 79, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 80, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .type p,
 .size p {
   background-color: transparent;
 }
 
-/* line 83, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
+/* line 84, /Users/Gio/Desktop/Talis/www/trash/res/sass/_appointment.scss */
 .hidden {
   opacity: 0;
 }

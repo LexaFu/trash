@@ -38,7 +38,7 @@ if (!isset($_SESSION['id_user'])) {
                 <input type="radio" name="type" value="Environnemental">
                 <p>Environnemental</p> 
               </div>
-              <br>
+              
               <div class="size">
                 <input type="radio" name="size" value="petit"><p>petit</p>
                 <input type="radio" name="size" value="moyen"><p>moyen</p>
